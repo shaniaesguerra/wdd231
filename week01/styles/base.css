@@ -4,7 +4,43 @@ terrra cotta #E07A5F
 deep slate blue #3D405B
 */
 
-*{
+/*For the whole site*/
+* {
     font-family: "Josefin Sans", sans-serif;
     box-sizing: border-box;
+}
+
+/*HEADER*/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px; /*top right bottom left*/
+    align-items: end; /*aligns text with icon -- middle*/
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    /*all images default to display in-line*/
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #3D405B;
+}
+
+/*HAMBURGER NAVIGATION*/
+.hamburger{
+    background: none;
+    border: none;
+    color: #3D405B;
+    cursor: pointer;
+}
+
+.hamburger::after{
+    content: "\2630";
+    font-size: 2rem;
 }
