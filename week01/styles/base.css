@@ -50,3 +50,30 @@ header span {
 .hamburger.show::before{
     content: "\00D7";
 }
+
+/*NAVIGATION BAR*/
+nav a{
+    text-decoration: none;
+    color: #3D405B;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav li {
+    padding: 10px;
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul{
+    display: flex;
+    justify-content: space-around;
+}
