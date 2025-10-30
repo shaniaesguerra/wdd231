@@ -26,12 +26,12 @@ h1 {
 header {
     display: grid;
     grid-template-columns: 30px auto 44px;
-    padding: 5px 0 5px 10px;
-    /*top right bottom left*/
+    padding: 7px 0 5px 10px;
     align-items: end;
-    /*aligns text with icon -- middle*/
-    border-bottom: solid 1px #ddd;
     column-gap: 10px;
+    background-color: var(--secondary-color);
+    border-bottom-left-radius: 0.6em;
+    border-bottom-right-radius: 0.6em;
 }
 
 header img {
@@ -45,15 +45,15 @@ header span {
     font-size: 1.3rem;
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
-    color: var(--secondary-color);
-
+    color: var(--primary-color);
+    padding-bottom: 4px;
 }
 
 /*HAMBURGER NAVIGATION*/
 .hamburger {
     background: none;
     border: none;
-    color: #3D405B;
+    color: var(--primary-color);
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -66,3 +66,5 @@ header span {
 .hamburger.show::before {
     content: "\00D7";
 }
+
+/*NAVIGATION BAR*/
