@@ -5,9 +5,9 @@
     --heading-font-weight: 400;
 
     /*Colors*/
-    --primary-color: #C8C4EB;
+    --primary-color: #E3E1F5;
     --secondary-color: #2B2D42;
-    --accent-color: #F4E3B2;
+    --accent-color: #EFC88B;
 }
 
 /*For the whole site*/
@@ -26,12 +26,11 @@ h1 {
 header {
     display: grid;
     grid-template-columns: 30px auto 44px;
-    padding: 7px 0 5px 10px;
+    padding: 7px 0 5px 15px;
     align-items: end;
-    column-gap: 10px;
+    column-gap: 15px;
     background-color: var(--secondary-color);
-    border-bottom-left-radius: 0.6em;
-    border-bottom-right-radius: 0.6em;
+
 }
 
 header img {
@@ -46,7 +45,7 @@ header span {
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
     color: var(--primary-color);
-    padding-bottom: 4px;
+    padding-bottom: 5px;
 }
 
 /*HAMBURGER NAVIGATION*/
@@ -68,3 +67,75 @@ header span {
 }
 
 /*NAVIGATION BAR*/
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem 15px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+    font-weight: 500;
+}
+
+.navigation li.current {
+    background-color: #fcd08ac4;
+}
+
+.navigation a:hover {
+    background-color: var(--accent-color);
+}
+
+/*MAIN*/
+#photo-sct img{
+    width: 200px;
+    height: auto;
+    border-radius: 0.6em;
+    border: 8px solid var(--accent-color);
+}
+
+/*FOOTER*/
+footer {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 1rem 15px;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social-media a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: solid 1px var(--accent-color);
+    border-radius: 22px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-media a:hover {
+    background-color: #1b1b2c;
+}
