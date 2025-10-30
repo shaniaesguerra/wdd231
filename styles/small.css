@@ -1,0 +1,68 @@
+:root {
+    --body-font-family: "Montserrat", sans-serif;
+    --body-font-weight: 400;
+    --heading-font-family: "Shrikhand", serif;
+    --heading-font-weight: 400;
+
+    /*Colors*/
+    --primary-color: #C8C4EB;
+    --secondary-color: #2B2D42;
+    --accent-color: #F4E3B2;
+}
+
+/*For the whole site*/
+* {
+    font-family: var(--body-font-family);
+    font-weight: var(--body-font-weight);
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+}
+
+/*HEADER*/
+header {
+    display: grid;
+    grid-template-columns: 30px auto 44px;
+    padding: 5px 0 5px 10px;
+    /*top right bottom left*/
+    align-items: end;
+    /*aligns text with icon -- middle*/
+    border-bottom: solid 1px #ddd;
+    column-gap: 10px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.3rem;
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    color: var(--secondary-color);
+
+}
+
+/*HAMBURGER NAVIGATION*/
+.hamburger {
+    background: none;
+    border: none;
+    color: #3D405B;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
