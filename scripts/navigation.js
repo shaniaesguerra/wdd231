@@ -1,4 +1,4 @@
-//Store the selected elemetns that we are goin to use
+//Store the selected elemetns that we are going to use
 const navbutton = document.querySelector('#ham-btn'); 
 const navBar = document.querySelector('#nav-bar');
 
