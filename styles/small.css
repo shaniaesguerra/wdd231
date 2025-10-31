@@ -17,6 +17,11 @@
     box-sizing: border-box;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
@@ -186,7 +191,9 @@ section {
     height: 44px;
     padding: 1em auto;
     border-radius: 0.6em;
+    font-family: var(--body-font-family);
     font-weight: 500;
+    font-size: 1em;
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
     background-image: linear-gradient(to right, #FFF 50%, var(--secondary-color) 50%);
