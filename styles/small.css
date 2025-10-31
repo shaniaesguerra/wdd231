@@ -22,7 +22,6 @@ h1 {
     font-weight: var(--heading-font-weight);
     text-transform: uppercase;
     margin-left: 15px;
-    margin-bottom: 0;
     color: var(--secondary-color);
 }
 
@@ -106,7 +105,7 @@ header span {
 /*MAIN*/
 
 main {
-    display: block
+    display: block ;
 }
 
 
@@ -119,9 +118,14 @@ h2 {
     background-color: var(--accent-color);
     color: var(--secondary-color);
     padding: 0.8rem;
-
+    margin-top: 0;
     border-radius: 0.6em;
     text-align: center;
+}
+
+section {
+    border-radius: 0.9em;
+    box-shadow: #2B2D4205 0px 1px 3px 0px, #1b1b2c26 0px 0px 0px 1px;
 }
 
 #about-sct {
@@ -129,7 +133,8 @@ h2 {
 }
 
 #about-sct p {
-    padding: 0.8rem 2rem 0.8rem 2rem;
+    padding: 0.7rem 2rem 0.7rem 2rem;
+    font-size: 16.5px;
 }
 
 #photo-sct {
@@ -147,6 +152,7 @@ h2 {
 
 #courses-sct {
     grid-column: 1/4;
+    margin-bottom: 0.6em;
 }
 
 /*FOOTER*/
