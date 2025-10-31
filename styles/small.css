@@ -189,7 +189,7 @@ section {
     outline: none;
     background: none;
     height: 44px;
-    padding-left: 1em 0 1em 0;
+    padding: 0 1em 0 1em;
     border-radius: 0.6em;
     font-family: var(--body-font-family);
     font-weight: 500;
