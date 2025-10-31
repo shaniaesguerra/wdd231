@@ -20,6 +20,10 @@
 h1 {
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
+    text-transform: uppercase;
+    margin-left: 15px;
+    margin-bottom: 0;
+    color: var(--secondary-color);
 }
 
 /*HEADER*/
@@ -100,11 +104,49 @@ header span {
 }
 
 /*MAIN*/
-#photo-sct img{
+
+main {
+    display: block
+}
+
+
+h1 {
+    grid-column: 1/4;
+}
+
+h2 {
+    font-weight: 500;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    padding: 0.8rem;
+
+    border-radius: 0.6em;
+    text-align: center;
+}
+
+#about-sct {
+    grid-column: 1/3;
+}
+
+#about-sct p {
+    padding: 0.8rem 2rem 0.8rem 2rem;
+}
+
+#photo-sct {
+    grid-column: 3/4;
+}
+
+#photo-sct img {
+    display: block;
     width: 200px;
     height: auto;
+    margin: auto;
     border-radius: 0.6em;
     border: 8px solid var(--accent-color);
+}
+
+#courses-sct {
+    grid-column: 1/4;
 }
 
 /*FOOTER*/
