@@ -119,16 +119,28 @@ function createCourseCards(coursesObj) {
         const course = coursesObj[i];
         if (course.completed) {
             coursesDiv.innerHTML += `
-            <h3>&#10004; ${course.subject} ${course.number.toString()}</h3>
+            <h3 class="checked">&#10004; ${course.subject} ${course.number.toString()}</h3>
             `;
-        } else {
+            
+        } else
+        {
             coursesDiv.innerHTML += `
-            <h3>${course.subject} ${course.number.toString()}</h3>
+            <h3>${course.subject} ${course.number}</h3>
             `;
         }
 
         numCourses += 1;
     }
 
-    resultSpan.textContent = `The total number of course listed below is ${numCourses}`;
+    //Get all the h3 tags with the class "checked"
+    const h3CheckedTags = document.querySelectorAll(".checked");
+
+    //Change the color of each tag
+    h3CheckedTags.forEach(h3Tag => {
+        h3Tag.style.backgroundColor = "#EFC88B";
+        h3Tag.style.color = "#2B2D42";
+    })
+
+    //show result in the span element for the total number of courses listed
+    resultSpan.innerHTML = `The total number of course listed below is <strong>${numCourses}</strong>`;
 }
