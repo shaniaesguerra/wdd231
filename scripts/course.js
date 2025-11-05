@@ -108,8 +108,8 @@ function createCourseCards(coursesObj) {
     //select the span to show the number of courses listed 
     const resultSpan = document.querySelector("#total-result");
 
-    //variable to store the numeber of courses listed
-    let numCourses = 0;
+    //variable to store the number of credits of the courses listed
+    let numCredits = 0;
 
     //empty the div
     coursesDiv.innerHTML = "";
@@ -129,7 +129,7 @@ function createCourseCards(coursesObj) {
             `;
         }
 
-        numCourses += 1;
+        numCredits += course.credits;
     }
 
     //Get all the h3 tags with the class "checked"
@@ -142,5 +142,5 @@ function createCourseCards(coursesObj) {
     })
 
     //show result in the span element for the total number of courses listed
-    resultSpan.innerHTML = `The total number of course listed below is <strong>${numCourses}</strong>`;
+    resultSpan.innerHTML = `The total number of course listed below is <strong>${numCredits}</strong>`;
 }
