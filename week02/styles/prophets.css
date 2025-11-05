@@ -1,0 +1,49 @@
+:root {
+    --body-font-family: "Montserrat", sans-serif;
+    --body-font-weight: 400;
+    --heading-font-family: "Shrikhand", serif;
+    --heading-font-weight: 400;
+
+    /*Colors*/
+    --primary-color: #E3E1F5;
+    --secondary-color: #2B2D42;
+    --accent-color: #EFC88B;
+}
+
+/*For the whole site*/
+* {
+    font-family: var(--body-font-family);
+    font-weight: var(--body-font-weight);
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+}
+
+header h1, #cards h2{
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    text-align: center;
+    column-gap: 1em;
+    row-gap: 1em;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+#cards section{
+    border-radius: 0.6em;
+    border:solid 1px var(--secondary-color);
+    padding: 1em;
+    
+}
+
+footer {
+    text-align: center;
+}
