@@ -112,19 +112,41 @@ main h1 {
     text-transform: uppercase;
 }
 
-button:hover {
+.menu button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    height: 44px;
+    padding: 0 1em 0 1em;
+    border-radius: 0.6em;
+    font-family: var(--heading-font-family);
+    font-weight: 500;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+
+    background-image: linear-gradient(to right, #FFF 50%, var(--primary-color) 50%);
+    background-size: 200%;
+    transition: 0.4s ease-out;
     cursor: pointer;
 }
 
+.menu button:hover {
+    background-position: right;
+    color: #FFF;
+}
+
 /*Grid view button click*/
-.grid-view{
+.grid-view {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     justify-content: center;
     align-items: center;
 }
 
-.grid-view section{
+.grid-view section {
     border-top: solid 8px var(--accent-color);
     border-radius: 0.6em;
     padding: 1.5rem;
@@ -132,40 +154,75 @@ button:hover {
     box-shadow: -10px 11px 10px -6px rgba(0, 0, 0, 0.1), 10px 11px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
-.grid-view section:hover{
+.grid-view section:hover {
     transform: scale(1.05);
 }
 
-.grid-view img{
+.grid-view img {
     width: auto;
     height: 90px;
     margin: 0.5rem;
 }
 
-.grid-view h2{
+.grid-view h2 {
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
     font-style: var(--heading-font-style);
 }
 
-.grid-view p{
+.grid-view p {
     margin-top: 0.1rem;
     margin-bottom: 0.5rem;
 }
 
 .grid-view a {
-    text-decoration:none;
-    color: #0651f1;
+    color: #0e3acc;
 }
 
-.grid-view a:hover{
+.grid-view a:hover {
     color: var(--dark-color);
 }
 
 /*List view button click*/
-.list-view{
-
+.list-view {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
+
+.list-view section{
+    display: flex;
+    margin: 0;
+    padding: 0.25rem;
+
+    & > *{
+        margin: 0 1rem
+    }
+
+    &:nth-child(even){
+        background-color: var(--accent-color);
+    }
+}
+
+.list-view img{
+    display: none;
+}
+
+.list-view p:last-of-type{
+    display: none;
+}
+
+.list-view h2{
+    font-size: 1rem;
+}
+
+.list-view a {
+    display: inline-block;
+    width: 150px;
+    overflow-wrap: break-word;
+}
+
+
 
 /*FOOTER*/
 footer {

@@ -40,7 +40,6 @@ const displayBusinessGrid = (businesses) => {
         let businessName = document.createElement('h2');
 
         //info container contents:
-        let info_container = document.createElement('span');
         let address = document.createElement('p');
         let phoneNumber = document.createElement('p');
         let email = document.createElement('p');
@@ -56,7 +55,7 @@ const displayBusinessGrid = (businesses) => {
         //Build businessName (h2) content
         businessName.textContent = `${business.name}`;
 
-        //Build the info_container(span) with content: 
+        //Build the (p) tags with content: 
         address.textContent = `${business.address.street}, ${business.address.city}, ${business.address.country} ${business.address.zip}`;
         phoneNumber.textContent = `${business.phone_number}`;
         email.textContent = `${business.email}`;
@@ -66,16 +65,14 @@ const displayBusinessGrid = (businesses) => {
         website.target = '_blank';
         website.textContent = business.url;
 
-        //Append content to info_container(span):
-        info_container.appendChild(address);
-        info_container.appendChild(phoneNumber);
-        info_container.appendChild(email);
-        info_container.appendChild(website);
-
         //Append all content to card(section):
         card.appendChild(icon);
         card.appendChild(businessName);
-        card.appendChild(info_container);
+        card.appendChild(address);
+        card.appendChild(phoneNumber);
+        card.appendChild(email);
+        card.appendChild(website);
+
 
         //Append the card(section) to businessCard(#div):
         businessCards.appendChild(card);

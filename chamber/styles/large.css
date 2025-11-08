@@ -34,4 +34,15 @@
     .navigation a {
         border: none;
     }
+
+    .list-view {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .list-view section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    }
 }
