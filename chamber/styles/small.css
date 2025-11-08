@@ -116,6 +116,16 @@ button:hover {
     cursor: pointer;
 }
 
+/*Grid view button click*/
+.grid-view{
+
+}
+
+/*List view button click*/
+.list-view{
+    
+}
+
 /*FOOTER*/
 footer {
     display: block;
