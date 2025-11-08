@@ -12,7 +12,7 @@
         "phone_number": "(780) 986-3122",
         "email":"N/A",
         "url": "https://www.kosmosleduc.ca/",
-        "image": "images/kosmos-icon.jpg",
+        "image": "images/kosmos-icon.webp",
         "membership_lvl": 3
     },
     {
@@ -27,7 +27,7 @@
         "phone_number": "(587) 424-2502",
         "email": "sales@firesideit.ca",
         "url": "https://firesideit.ca/",
-        "image": "images/fireside-icon.png",
+        "image": "images/fireside-icon.webp",
         "membership_lvl": 2
     },
     {
@@ -42,7 +42,7 @@
         "phone_number": "(780) 739-1550",
         "email": "manager@artsfoundry.ca",
         "url": "https://www.artsfoundry.ca/",
-        "image": "images/arts-foundry-icon.jpg",
+        "image": "images/arts-foundry-icon.webp",
         "membership_lvl": 1
     },
     {
@@ -57,7 +57,7 @@
         "phone_number": "(780) 458-5479",
         "email": "office@nsllp.ca",
         "url": "https://nsllp.ca/",
-        "image": "images/nsllp-icon.jpg",
+        "image": "images/nsllp-icon.webp",
         "membership_lvl": 3
     },
     {
@@ -72,7 +72,7 @@
         "phone_number": "(780) 352-2244",
         "email": "N/A",
         "url": "https://www.hansonspaintanddecor.com/",
-        "image": "images/hansons-icon.jpg",
+        "image": "images/hansons-icon.webp",
         "membership_lvl": 1
     },
     {
@@ -87,7 +87,7 @@
         "phone_number": "(780) 980-5443",
         "email": "info@leducphysio.ca",
         "url": "https://www.leducphysio.ca/",
-        "image": "images/leduc-physio-icon.jpg",
+        "image": "images/leduc-physio-icon.webp",
         "membership_lvl": 2
 
     },
@@ -103,7 +103,7 @@
         "phone_number": "(780) 980-2404",
         "email": "zuluhair@shaw.ca",
         "url": "https://www.zuluhair.com/",
-        "image": "images/zulu-icon.png",
+        "image": "images/zulu-icon.webp",
         "membership_lvl": 1
     }
 ]
