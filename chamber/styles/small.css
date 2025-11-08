@@ -1,15 +1,14 @@
 :root {
     --body-font-family: "Lora", serif;
-    --body-font-weight: 400;
+    --body-font-weight: 200;
     --heading-font-family: "Montserrat", sans-serif;
-    --heading-font-weight: 700;
-    --heading-font-style: italic;
+    --heading-font-weight: 550;
 
     /*Colors*/
-    --dark-color: #17033f;
-    --primary-color: #1c2d63;
-    --secondary-color: #ad95db;
-    --accent-color: #c8c96a;
+    --dark-color: #283618;
+    --primary-color: #344e41;
+    --secondary-color: #606c38;
+    --accent-color: #dda15e;
 }
 
 /*For the whole site*/
@@ -46,7 +45,6 @@ header span {
     font-size: 1.3rem;
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
-    font-style: var(--heading-font-style);
     color: #ffff;
     padding-bottom: 5px;
 }
@@ -90,7 +88,9 @@ header span {
     color: var(--dark-color);
     text-decoration: none;
     border-bottom: solid 1px #ddd;
+    font-family: var(--heading-font-family);
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 .navigation li.current {
@@ -109,7 +109,8 @@ main {
 main h1 {
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
-    text-transform: uppercase;
+    text-align: left;
+    padding-left: 20px;
 }
 
 .menu button {
@@ -167,7 +168,6 @@ main h1 {
 .grid-view h2 {
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
-    font-style: var(--heading-font-style);
 }
 
 .grid-view p {
@@ -176,7 +176,7 @@ main h1 {
 }
 
 .grid-view a {
-    color: #0e3acc;
+    color: var(--secondary-color);
 }
 
 .grid-view a:hover {
@@ -200,7 +200,7 @@ main h1 {
     }
 
     &:nth-child(even){
-        background-color: var(--accent-color);
+        background-color: #dda25e79;
     }
 }
 
@@ -220,6 +220,12 @@ main h1 {
     display: inline-block;
     width: 150px;
     overflow-wrap: break-word;
+    text-align: left;
+    color: var(--dark-color);
+}
+
+.list-view a:hover{
+    color: #10160a  ;
 }
 
 
@@ -228,7 +234,7 @@ main h1 {
 footer {
     display: block;
     background-color: var(--primary-color);
-    color: var(--accent-color);
+    color: #fff;
     padding: 1rem 20px;
     text-align: left;
 }
@@ -263,7 +269,7 @@ div {
     align-items: center;
     width: 44px;
     height: 44px;
-    border: solid 1px var(--secondary-color);
+    border: solid 1px var(--accent-color);
     border-radius: 22px;
 }
 

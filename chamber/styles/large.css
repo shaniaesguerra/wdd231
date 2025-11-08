@@ -14,7 +14,7 @@
 
     footer {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 2fr auto 1.5fr;
         column-gap: 0.6em;
     }
 
