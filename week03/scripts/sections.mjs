@@ -13,4 +13,4 @@ function setSectionSelection(sections) {
     });
 }
 
-export function populateSections(sections) {setSectionSelection(sections)}
+export {setSectionSelection};
