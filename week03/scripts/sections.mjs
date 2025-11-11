@@ -3,9 +3,9 @@
     section selection element on the page
 */
 
-function setSectionSelection() {
+function setSectionSelection(sections) {
     const sectionSelect = document.querySelector("#sectionNumber");
-    byuiCourse.sections.forEach((section) => {
+    sections.forEach((section) => {
         const option = document.createElement("option");
         option.value = section.sectionNumber;
         option.textContent = `${section.sectionNumber}`;
@@ -13,4 +13,4 @@ function setSectionSelection() {
     });
 }
 
-export function populateSections(sections) {}
+export function populateSections(sections) {setSectionSelection(sections)}
