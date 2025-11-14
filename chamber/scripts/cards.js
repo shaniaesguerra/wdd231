@@ -34,6 +34,7 @@ listViewBtn.addEventListener('click', () => {
 //Create content for Grid view
 const displayBusinessGrid = (businesses) => {
     businesses.forEach(business => {
+        /************ FOR POPULATING GRID IN DIRECTORY PAGE ****************/
         //Create elements to build for each card:
         let card = document.createElement('section');
         let icon = document.createElement('img');
