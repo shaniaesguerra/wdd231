@@ -21,7 +21,7 @@ const displayBusinessGrid = (businesses) => {
     let spotCount = 0; // keep track of businesses to place in spotlight
     
     businesses.forEach(business => {
-        if (spotCount < 3) {
+        if ((business.membership_lvl == 3 || business.membership_lvl == 2) && spotCount <= 3) {
             /************ FOR POPULATING SPOTLIGHT CARDS IN LANDDING PAGE ****************/
             //Create elements to build for each card:
             let card = document.createElement('section');
