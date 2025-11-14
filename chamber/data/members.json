@@ -13,7 +13,7 @@
         "email":"N/A",
         "url": "https://www.kosmosleduc.ca/",
         "image": "images/kosmos-icon.webp",
-        "membership_lvl": 3
+        "membership_lvl": 1
     },
     {
         "name": "Fireside IT Partners",
@@ -28,7 +28,7 @@
         "email": "sales@firesideit.ca",
         "url": "https://firesideit.ca/",
         "image": "images/fireside-icon.webp",
-        "membership_lvl": 2
+        "membership_lvl": 1
     },
     {
         "name": "Leduc Arts Foundry",
@@ -43,7 +43,7 @@
         "email": "manager@artsfoundry.ca",
         "url": "https://www.artsfoundry.ca/",
         "image": "images/arts-foundry-icon.webp",
-        "membership_lvl": 1
+        "membership_lvl": 3
     },
     {
         "name": "Nguyen Scott LLP",

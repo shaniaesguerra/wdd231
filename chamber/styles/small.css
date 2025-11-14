@@ -286,6 +286,25 @@ button {
     transform: scale(1.15);
 }
 
+/*SPOTLIGHT*/
+#spot-business-cards{
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+#spot-business-cards p:last-child{
+    margin: 1.3em;
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    text-transform: uppercase;
+    font-size: 1em;
+    font-style: italic;
+
+    background-color: var(--dark-color);
+    color: var(--lighter-text-color);
+    padding: 0.5em;
+    border-radius: 0.6em;
+}
+
 /*FOOTER*/
 footer {
     display: block;
