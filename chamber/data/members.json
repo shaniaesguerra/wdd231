@@ -13,7 +13,7 @@
         "email":"N/A",
         "url": "https://www.kosmosleduc.ca/",
         "image": "images/kosmos-icon.webp",
-        "membership_lvl": 1
+        "membership_lvl": 3
     },
     {
         "name": "Fireside IT Partners",
@@ -28,7 +28,7 @@
         "email": "sales@firesideit.ca",
         "url": "https://firesideit.ca/",
         "image": "images/fireside-icon.webp",
-        "membership_lvl": 1
+        "membership_lvl": 2
     },
     {
         "name": "Leduc Arts Foundry",

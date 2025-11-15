@@ -200,11 +200,13 @@ button {
 }
 
 .grid-view a {
-    color: var(--secondary-color);
+    color: var(--dark-color);
 }
 
 .grid-view a:hover {
-    color: var(--dark-color);
+    background-color: var(--shadow-color);
+    padding: 0.2em;
+    border-radius: 0.6em;
 }
 
 /*List view button click*/
@@ -299,7 +301,7 @@ button {
 }
 
 .info-cards section {
-    border: 1px solid var(--light-border-color);
+    box-shadow: -10px 11px 10px -6px var(--shadow-color), 10px 11px 10px -6px var(--shadow-color);
     border-radius: 0.6em;
     padding: 0;
 }
