@@ -46,4 +46,12 @@
         display: grid;
         grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
     }
+
+    .info-cards {
+        display: grid;
+    }
+
+    #weather-api {
+        display: grid;
+    }
 }

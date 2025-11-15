@@ -14,7 +14,8 @@
     --lighter-text-color: #FFF;
     --light-border-color: #ddd;
     --shadow-color: #0000002a;
-    --dark-hover-color:#00000093;
+    --overlay-back-color: #000000b7;
+    --dark-hover-color: #00000093;
 }
 
 /*For the whole site*/
@@ -253,12 +254,13 @@ button {
     color: #10160a;
 }
 
-/*HERO*/
+/*HOME: HERO*/
 .hero {
     position: relative;
+    margin-top: 0;
 }
 
-.hero img{
+.hero img {
     border-radius: 0.6em;
     width: 100%;
 }
@@ -267,15 +269,18 @@ button {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 30%;
-    height: 44px;
-    margin-right: 7%;
-    margin-bottom: 4%;
+    width: 40%;
+    height: 55px;
+    margin-right: 10%;
+    margin-bottom: 7%;
+
+    font-size: 1.4em;
 
     color: var(--lighter-text-color);
-    border: 1px solid var(--lighter-text-color);
+    border: 3px solid var(--lighter-text-color);
+    box-shadow: -10px 11px 10px -6px var(--shadow-color), 10px 11px 10px -6px var(--shadow-color);
 
-    background-image: linear-gradient(to right, var(--shadow-color) 50%, var(--dark-hover-color) 50%);
+    background-image: linear-gradient(to right, var(--overlay-back-color) 50%, var(--dark-hover-color) 50%);
     background-size: 200%;
     transition: 0.4s ease-out;
     cursor: pointer;
@@ -283,15 +288,77 @@ button {
 
 .hero button:hover {
     background-position: right;
-    transform: scale(1.15);
 }
 
-/*SPOTLIGHT*/
-#spot-business-cards{
+/*HOME: INFO CARDS*/
+.info-cards {
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.6em;
+    row-gap: 0.6em;
+}
+
+.info-cards section {
+    border: 1px solid var(--light-border-color);
+    border-radius: 0.6em;
+    padding: 0;
+}
+
+.info-cards h2 {
+    text-align: left;
+    background-color: var(--lighter-secondary-color);
+    color: var(--dark-color);
+    border-radius: 0.3em;
+    padding: 0.5em;
+    margin: 0;
+
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-style: italic;
+}
+
+#weather-api {
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+}
+
+#weather-api p{
+    padding-left: 1em;
+}
+
+#weather-api h2 {
+    grid-column: 1/3;
+}
+
+#weather-api figure {
+    grid-column: 1/2;
+    margin: 0;
+
+    justify-items: center;
+    align-items: center;
+}
+
+#current-temp{
+    font-weight: 700;
+}
+
+#weather-desc{
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+#weather-forecast p {
+    text-align: left;
+    padding-left: 1em;
+}
+
+/*HOME: SPOTLIGHT*/
+#spot-business-cards {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-#spot-business-cards p:last-child{
+#spot-business-cards p:last-child {
     margin: 1.3em;
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
