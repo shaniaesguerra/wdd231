@@ -14,6 +14,9 @@ const currentWeatherUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=5
 const threeDayForecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=53.26&lon=-113.55&units=metric&appid=295597fd303b1837d9546858b82c9006';
 
 async function currentWeatherApiFetch() {
+    /*
+    Fetches Data for the Current Weather Forecast 
+    */
     try {
         const response = await fetch(currentWeatherUrl);
         if (response.ok) {
@@ -30,6 +33,9 @@ async function currentWeatherApiFetch() {
 }
 
 async function threeDayForecastApiFetch() {
+    /*
+    Fetches Data for the Three Day Forecast 
+    */
     try {
         const response = await fetch(threeDayForecastUrl);
         if (response.ok) {
@@ -46,6 +52,9 @@ async function threeDayForecastApiFetch() {
 }
 
 function displayThreeDayForecast(data) {
+    /*
+    Populates the container where Three Day Forecast Data is displayed
+    */
     const dailyForecast = []; //array for the 3-day Forecast
     const dateToday = new Date(); //stores the full date today
     const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday",
@@ -84,6 +93,9 @@ function displayThreeDayForecast(data) {
 }
 
 function displayCurrentWeatherResults(data) {
+    /*
+     Populates the container where Current Weather Data is displayed
+     */
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
 
     //Set weather icon attributes
