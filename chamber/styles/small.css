@@ -265,6 +265,7 @@ button {
 .hero img {
     border-radius: 0.6em;
     width: 100%;
+    height: auto;
 }
 
 .hero button {
