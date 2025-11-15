@@ -8,15 +8,18 @@ const humidity = document.querySelector('#humidity');
 const sunriseTime = document.querySelector("#sunrise-time");
 const sunsetTime = document.querySelector("#sunset-time");
 
-const weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=53.26&lon=-113.55&units=metric&appid=295597fd303b1837d9546858b82c9006';
+const threeDayForecast = document.querySelector('#three-day-weather');
 
-async function apiFetch() {
+const currentWeatherUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=53.26&lon=-113.55&units=metric&appid=295597fd303b1837d9546858b82c9006';
+const threeDayForecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=53.26&lon=-113.55&units=metric&appid=295597fd303b1837d9546858b82c9006';
+
+async function currentWeatherApiFetch() {
     try {
-        const response = await fetch(weatherUrl);
+        const response = await fetch(currentWeatherUrl);
         if (response.ok) {
             const data = await response.json();
             //console.log(data); // for testing and seeing output
-            displayResults(data); //uncomment the call to the function when output is good
+            displayCurrentWeatherResults(data); //uncomment the call to the function when output is good
         } else {
             throw Error(await response.text());
             
@@ -26,7 +29,61 @@ async function apiFetch() {
     }
 }
 
-function displayResults(data) {
+async function threeDayForecastApiFetch() {
+    try {
+        const response = await fetch(threeDayForecastUrl);
+        if (response.ok) {
+            const data = await response.json();
+            //console.log(data); // for testing and seeing output
+            displayThreeDayForecast(data); //uncomment the call to the function when output is good
+        } else {
+            throw Error(await response.text());
+
+        }
+    } catch (error) {
+        console.log(error); //print error to console
+    }
+}
+
+function displayThreeDayForecast(data) {
+    const dailyForecast = []; //array for the 3-day Forecast
+    const dateToday = new Date(); //stores the full date today
+    const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday",
+                    "Thursday", "Friday", "Saturday"]; // stores strings for days of the week
+
+    for (let i = 0; i <= 3; i++) {
+        //Store each data gathered in a day in an object:
+        const forecastDay = {
+            //set datatype to null to avoid errors, unsure of the type of data being passed to it
+            dayOfWeek: null,     
+            temp: null, 
+        };
+
+        //Filter the list to find a common day 
+        const dataInDay = data.list.filter(value => {
+            const date = new Date(value.dt * 1000); // convert the timestamp to a Date
+            //check if the day of the month is the same as today's date as a filter for the list
+            return date.getDate() === dateToday.getDate() + i; 
+        })
+
+        //Find a common time in the day => pick 12 noon
+        const noonTime = dataInDay.find(value => new Date(value.dt * 1000).getHours() === 2);
+        //if it is found append data to forecastDay object
+        if (noonTime) {
+            const forecastDate = new Date(noonTime.dt * 1000).getDay();
+            forecastDay.dayOfWeek = weekday[forecastDate]; //store as a string for day of the week
+            forecastDay.temp = noonTime.main.temp; //store temp at said hour
+            dailyForecast.push(forecastDay); // push to main array
+        }
+    }
+
+    //Populate the p tag 
+    dailyForecast.forEach(day => {
+        threeDayForecast.innerHTML += `<span>${day.dayOfWeek}: ${day.temp}&deg;C</span><br>`;
+    });
+}
+
+function displayCurrentWeatherResults(data) {
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
 
     //Set weather icon attributes
@@ -93,4 +150,5 @@ function getSunriseLocalTime(dataObj) {
     return currentSunriseTimeStr
 }
 
-apiFetch();
+currentWeatherApiFetch();
+threeDayForecastApiFetch();
