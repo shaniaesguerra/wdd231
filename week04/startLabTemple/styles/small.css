@@ -1,2 +1,45 @@
-*{box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+    
+}
 
+#mydialog{
+    border: none;
+    border-radius: 0.6em;
+    padding: 0;
+    width: 90%;
+}
+
+#mydialog div {
+    display: grid;
+    grid-template-columns: auto 44px;
+    background-color: #16aaaf2d;
+    padding: 5px;
+    border-bottom: #00353677 1px solid;
+}
+
+#mydialog h2{
+    margin: 0;
+    color: #003536;
+}
+
+#mydialog button{
+    appearance: none;
+    border: none;
+    margin: 0;
+    border-radius: 0.6em;
+    box-shadow:  0 0 10px #aaa;
+    background-color: #19bfc59a;
+    color: #003536;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+#mydialog p {
+    padding: 10px;
+    color: #003536;
+}
+
+::backdrop{
+    background-color: #002c2e2c;
+}

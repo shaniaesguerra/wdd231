@@ -1,6 +1,6 @@
 //https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/
-
-temples = [
+export const url = "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/";
+export const temples = [
     {
         "number": "1",
         "name": "St. George Utah Temple",
@@ -210,6 +210,13 @@ temples = [
         "dedicated": "October, 1984",
         "person": "Gordon B. Hinckley",
         "path": "dallas-texas/400x250/dallas-temple-lds-1048888-wallpaper.jpg"
+    },
+    {
+        "number": "31",
+        "name": "Edmonton Alberta Temple",
+        "dedicated": "December, 1999",
+        "person": "Gordon B. Hinckley",
+        "path": "edmonton-alberta/320x200/edmonton-alberta-temple-lds-854741-wallpaper.jpg"
     }
 ]
 
