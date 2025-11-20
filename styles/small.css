@@ -17,7 +17,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
@@ -177,7 +177,7 @@ section {
     text-align: center;
 }
 
-#courses-sct nav{
+#courses-sct nav {
     display: flex;
     flex-wrap: wrap;
     column-gap: 1rem;
@@ -202,7 +202,7 @@ section {
     cursor: pointer;
 }
 
-#courses-sct button:hover{
+#courses-sct button:hover {
     background-position: right;
     color: var(--primary-color);
 }
@@ -219,6 +219,62 @@ section {
     color: var(--primary-color);
     padding: 0.7rem 2rem 0.7rem 2rem;
     border-radius: 0.6em;
+    cursor: pointer;
+}
+
+/*DIALOG*/
+#dialog {
+    border: none;
+    border-radius: 0.6em;
+    padding: 0;
+    width: 70%;
+}
+
+#dialog div {
+    display: grid;
+    grid-template-columns: auto 44px;
+}
+
+#dialog h2 {
+    margin: 0;
+    border-radius: 0.3em;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 1px solid #2b2d426c;
+}
+
+#dialog button {
+    appearance: none;
+    border: none;
+    margin: 0;
+    border-radius: 0.6em;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 1em;
+    cursor: pointer;
+    border-bottom: 1px solid #2b2d426c;
+}
+
+#dialog button:hover{
+    background-color: var(--primary-color);
+    transition: all 0.2s ease-in;
+}
+
+#dialog p {
+    padding: 2em;
+}
+
+#dialog p::first-line{
+    font-weight: bold;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+::backdrop{
+    background-color: #2b2d426c;
 }
 
 /*FOOTER*/
@@ -252,5 +308,5 @@ footer {
 
 .social-media a:hover {
     background-color: #1b1b2c;
-    
+
 }
