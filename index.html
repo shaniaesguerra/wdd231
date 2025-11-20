@@ -31,7 +31,7 @@
     <!--Scripts-->
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/course.js" defer></script>
+    <script src="scripts/course.js" type="module"></script>
 </head>
 
 <body>
@@ -81,6 +81,15 @@
             <span id="total-result"></span>
             <div id="filtered-courses"></div>
         </section>
+
+        <!--Dialog For each course-->
+        <dialog id="dialog">
+            <div>
+                <h2></h2>
+                <button>&times;</button>
+            </div>
+            <p></p>
+        </dialog>
     </main>
     <footer>
         <div class="social-media">

@@ -78,11 +78,17 @@ const courses = [
     }
 ]
 
-
 //Buttons:
 const allCoursesBtn = document.querySelector("#all-courses-btn");
 const wddCoursesBtn = document.querySelector("#wdd-courses-btn");
 const cseCoursesBtn = document.querySelector("#cse-courses-btn");
+
+//Select element for where the Dialog will show:
+const coursesInfoBtn = document.querySelector("#filtered-courses h3");
+const dialog = document.querySelector("#dialog"); //dialog box
+const dialogCourseName = document.querySelector("#dialog h2");
+const dialogClose = document.querySelector("dialog button");
+const dialogCourseInfo = document.querySelector("dialog p");
 
 allCoursesBtn.addEventListener("click", () => {
     createCourseCards(courses);
@@ -95,6 +101,21 @@ wddCoursesBtn.addEventListener("click", () => {
 cseCoursesBtn.addEventListener("click", () => {
     createCourseCards(courses.filter(course => course.subject == 'CSE'));
 });
+
+//Event listener to close dialog:
+dialogClose.addEventListener("click", () => {
+    dialog.close();
+});
+
+function showInfo(info) {
+    dialogCourseName.innerHTML = `${info.subject} ${info.number}`;
+    dialogCourseInfo.innerHTML = `${info.title}<br><br>
+                                ${info.credits} credits<br><br>
+                                Certificate: ${info.certificate}<br><br>
+                                ${info.description}<br><br>
+                                Technology: ${info.technology}`;
+    dialog.showModal();
+}
 
 /*---------------------------------------------------------------------------------------------------------- 
 Function: createCourseCards (coursesObj)
@@ -115,22 +136,19 @@ function createCourseCards(coursesObj) {
     coursesDiv.innerHTML = "";
 
     //populate the div
-    for (let i = 0; i < coursesObj.length; i++) {
-        const course = coursesObj[i];
+    coursesObj.forEach(course => {
+        const courseTag = document.createElement('h3');
         if (course.completed) {
-            coursesDiv.innerHTML += `
-            <h3 class="checked">&#10004; ${course.subject} ${course.number.toString()}</h3>
-            `;
-            
-        } else
-        {
-            coursesDiv.innerHTML += `
-            <h3>${course.subject} ${course.number}</h3>
-            `;
+            courseTag.innerHTML += `&#10004; ${course.subject} ${course.number.toString()}`;
+            courseTag.className = "checked";
+        } else {
+            courseTag.innerHTML += `${course.subject} ${course.number}`;
         }
 
         numCredits += course.credits;
-    }
+        courseTag.addEventListener("click", () => showInfo(course));
+        coursesDiv.appendChild(courseTag);
+    });
 
     //Get all the h3 tags with the class "checked"
     const h3CheckedTags = document.querySelectorAll(".checked");
@@ -139,7 +157,7 @@ function createCourseCards(coursesObj) {
     h3CheckedTags.forEach(h3Tag => {
         h3Tag.style.backgroundColor = "#EFC88B";
         h3Tag.style.color = "#2B2D42";
-    })
+    });
 
     //show result in the span element for the total number of courses listed
     resultSpan.innerHTML = `The total number of course listed below is <strong>${numCredits}</strong>`;
