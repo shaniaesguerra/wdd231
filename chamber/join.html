@@ -56,6 +56,51 @@
     </nav>
     <main>
         <h1>Join</h1>
+        <form action="get">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="firstName">First Name</label>
+                <input id="firstName" name="firstName" title="First Name" type="text" autocomplete="given-name"
+                    required>
+
+                <label for="lastName">Last Name</label>
+                <input id="lastName" name="lastName" title="Last Name" type="text" autocomplete="family-name" required>
+
+                <label for="orgTitle">Organization Title</label>
+                <input id="orgTitle" name="orgTitle" title="Organization Title" type="text"
+                    autocomplete="organization-title">
+
+                <label for="email">Email</label>
+                <input id="email" name="email" title="Email" type="email" autocomplete="email" required>
+
+                <label for="phone">Mobile Phone Number</label>
+                <input id="phone" name="phone" title="Mobile Phone Number" type="tel" autocomplete="tel" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Business Information and Membership</legend>
+                <label for="businessName">Business or Organization Name</label>
+                <input id="businessName" name="businessName" title="Business or Organization Name" type="text"
+                    autocomplete="organization" required>
+
+                <div>
+                    <p>Membership Level:</p>
+                    <label for="npMember">NP Membership</label>
+                    <input id="npMember" name="membershipLevel" value="np" title="NP Membership" type="radio" required>
+
+                    <label for="bronzeMember">Bronze Membership</label>
+                    <input id="bronzeMember" name="membershipLevel" value="bronze" title="Bronze Membership" type="radio" required>
+
+                    <label for="silverMember">Silver Membership</label>
+                    <input id="silverMember" name="membershipLevel" value="silver" title="Silver Membership" type="radio" required>
+
+                    <label for="goldMember">Gold Membership</label>
+                    <input id="goldMember" name="membershipLevel" value="gold" title="Gold Membership" type="radio" required>
+                </div>
+
+                
+            </fieldset>
+        </form>
     </main>
     <footer>
         <div class="site-info">
