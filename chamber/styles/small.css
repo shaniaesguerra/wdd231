@@ -13,6 +13,7 @@
     --lighter-accent-color: #dda25e79;
     --lighter-text-color: #FFF;
     --light-border-color: #ddd;
+    --light-input-color: #ebebeb;
     --shadow-color: #0000002a;
     --overlay-back-color: #000000b7;
     --dark-hover-color: #00000093;
@@ -326,7 +327,7 @@ button {
     text-align: left;
 }
 
-#weather-api p{
+#weather-api p {
     padding-left: 1em;
     padding-right: 0.5em;
 }
@@ -341,12 +342,12 @@ button {
     text-align: center;
 }
 
-#current-temp{
+#current-temp {
     font-weight: 700;
     font-size: 1.5em;
 }
 
-#weather-desc{
+#weather-desc {
     text-transform: capitalize;
     font-style: italic;
 }
@@ -374,6 +375,153 @@ button {
     padding: 0.5em;
     border-radius: 0.6em;
 }
+
+/*JOIN PAGE*/
+#joinPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#joinPage h1 {
+    grid-column: 1/3;
+}
+
+.memberForm {
+    margin: 1em 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.memberForm fieldset legend {
+    text-align: center;
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    padding: 1em;
+}
+
+.memberForm label {
+    font-family: var(--heading-font-family);
+    font-weight: 350;
+    font-style: italic;
+    padding-left: 2px;
+}
+
+.memberForm fieldset {
+    border-radius: 0.6em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border: 1px solid var(--light-border-color);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"],
+textarea{
+    margin-bottom: 1em;
+    height: 44px;
+    width: 100%;
+    border-radius: 0.6em;
+    display: block;
+    background-color: var(--light-input-color);
+    border: none;
+    border-radius: 0.6em;
+    padding: 0.75rem;
+    color: #000;
+    width: 100%;
+    appearance: none;
+    font-family: var(--body-font);
+}
+
+.memberForm input[type="text"]:required,
+.memberForm input[type="email"]:required,
+.memberForm input[type="tel"]:required,
+.memberForm textarea:required {
+    border-left: solid 8px var(--accent-color);
+}
+
+.memberForm input[type="text"]:valid,
+.memberForm input[type="email"]:valid,
+.memberForm input[type="tel"]:valid,
+.memberForm textarea:valid {
+    border-left: solid 8px var(--lighter-secondary-color);
+
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    border-radius: 0.6em;
+}
+
+#radioMember {
+    grid-column: 1/3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.memberForm input[type="radio"] {
+    text-align: right;
+    margin-bottom: 1em;
+    padding-right: 2px;
+}
+
+#radioMember h2 {
+    grid-column: 1/3;
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-size: 1.3em;
+    padding-left: 2px;
+}
+
+.memberForm input[type="submit"] {
+    grid-column: 1/3;
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-size: 1em;
+
+    color: var(--dark-color);
+    border: 1px solid var(--accent-color);
+
+    background-image: linear-gradient(to right, var(--accent-color) 50%, var(--dark-color) 50%);
+    background-size: 200%;
+    transition: 0.4s ease-out;
+    cursor: pointer;
+}
+
+.memberForm input[type="submit"]:hover {
+    background-position: right;
+    color: var(--lighter-text-color);
+    border: 1px solid var(--dark-color);
+}
+
+#cardsShowHere {
+    grid-column: 2/3;
+}
+
+#cardsShowHere div {
+    animation: fade 4s;
+}
+
+/*animations*/
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*DIALOG*/
+
 
 /*FOOTER*/
 footer {
