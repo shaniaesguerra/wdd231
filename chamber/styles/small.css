@@ -604,6 +604,9 @@ textarea {
     border-bottom-right-radius: 0;
     background-color: var(--dark-color);
     color: var(--lighter-text-color);
+
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
 }
 
 #memberDialog button {
@@ -640,6 +643,11 @@ textarea {
     font-weight: bold;
     font-size: 1.5em;
     font-style: italic;
+}
+
+#memberDialog p span {
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
 }
 
 ::backdrop {
