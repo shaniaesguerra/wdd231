@@ -1,5 +1,5 @@
 import { membershipInfo } from '../data/membership-info.js';
-console.log(membershipInfo);
+//console.log(membershipInfo); //for debugging
 
 //Get the container where to show the dialog
 const membershipInfoCards = document.querySelector("#cardsShowHere");
@@ -14,9 +14,9 @@ membershipClose.addEventListener("click", () => {
 
 //Loop through the array of JSON items
 function displayMembershipInfo(data) {
-    console.log(data);
+    //console.log(data); //for debugging
     data.forEach( info => {
-        console.log(info);
+        //console.log(info); for debugging
 
         const infoContainer = document.createElement('div');
         const title = document.createElement('h3');
