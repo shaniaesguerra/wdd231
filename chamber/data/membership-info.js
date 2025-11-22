@@ -1,5 +1,4 @@
-{
-    "membershipInfo":[
+export const membershipInfo =[
         {
             "name": "NP Membership",
             "id": 0,
@@ -29,5 +28,4 @@
             "price": 740.40
         }
     
-    ]
-}
+]
