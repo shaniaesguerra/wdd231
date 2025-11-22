@@ -42,7 +42,7 @@ function displayMembershipInfo(data) {
 
 function showInfo(info) {
     membershipTitle.innerHTML = info.name;
-    memberInfoContainer.innerHTML = `Description: <br>${info.description}<br><br><span>Membership Price: $${info.price}</span>`;
+    memberInfoContainer.innerHTML = `Description: <br><br>${info.description}<br><br><span>Membership Price: $${info.price}</span>`;
     membershipDialog.showModal();
 }
 
