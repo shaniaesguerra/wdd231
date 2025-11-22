@@ -1,6 +1,6 @@
 //Get url for info
 const memberInfo = new URLSearchParams(window.location.search);
-console.log(memberInfo);
+//console.log(memberInfo); //for debugging
 
 // Variables to get input values:
 // firstName = required
@@ -13,15 +13,17 @@ console.log(memberInfo);
 // membershipLevel = required
 // timestamp
 
-console.log(memberInfo.get('firstName'));
-console.log(memberInfo.get('lastName'));
-console.log(memberInfo.get('email'));
-console.log(memberInfo.get('phone'));
-console.log(memberInfo.get('businessName'));
-console.log(memberInfo.get('membershipLevel'));
-console.log(memberInfo.get('timestamp'));
+/****For Debugging*****/
+// console.log(memberInfo.get('firstName'));
+// console.log(memberInfo.get('lastName'));
+// console.log(memberInfo.get('email'));
+// console.log(memberInfo.get('phone'));
+// console.log(memberInfo.get('businessName'));
+// console.log(memberInfo.get('membershipLevel'));
+// console.log(memberInfo.get('timestamp'));
+/*********************/
 
-const resultsContainer = document.querySelector("#results")
+const resultsContainer = document.querySelector("#results");
 
 resultsContainer.innerHTML = `
     <p>Welcome to the Leduc Chamber of Commerce, ${memberInfo.get('firstName')} ${memberInfo.get('lastName')}</p>
@@ -34,6 +36,6 @@ resultsContainer.innerHTML = `
    
     <p>Member Information:</p>
     <p>Business Name: ${memberInfo.get('businessName')}</p>
-    <p>Registered Membership: ${memberInfo.get('membershipLevel')}</p><br>
+    <p>Registered Membership: ${memberInfo.get('membershipLevel').toUpperCase()} MEMBERSHIP</p><br>
     <p>Membership Application Form Submission Date: ${memberInfo.get('timestamp')}</p>
     `;

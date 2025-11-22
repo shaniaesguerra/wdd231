@@ -7,6 +7,11 @@ const membershipDialog = document.querySelector("#memberDialog");
 const membershipTitle = document.querySelector("#memberDialog h2");
 const membershipClose = document.querySelector("#memberDialog button");
 const memberInfoContainer = document.querySelector("#memberDialog p");
+const timestamp = document.querySelector("#timestamp");
+const submitDate = new Date();
+
+timestamp.value = submitDate.toDateString();
+console.log(timestamp.value);
 
 membershipClose.addEventListener("click", () => {
     membershipDialog.close();

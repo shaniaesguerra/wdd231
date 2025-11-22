@@ -9,6 +9,7 @@
     --primary-color: #344e41;
     --secondary-color: #606c38;
     --lighter-secondary-color: #c8c96ac4;
+    --lighter-back-color: #c7c96a7c;
     --accent-color: #dda15e;
     --lighter-accent-color: #dda25e79;
     --lighter-text-color: #FFF;
@@ -654,6 +655,31 @@ textarea {
     background-color: var(--dark-hover-color);
 }
 
+#results {
+    background-color: var(--lighter-back-color);
+    padding: 0 1rem;
+    margin: 2em;
+    border: 1px solid var(--dark-color);
+    border-radius: 0.6em;
+}
+
+#results p:nth-of-type(3),
+#results p:nth-of-type(4),
+#results p:nth-of-type(5),
+#results p:nth-of-type(6),
+#results p:nth-of-type(7),
+#results p:nth-of-type(8),
+#results p:nth-of-type(9){
+    text-align: center;
+}
+
+#results p:nth-of-type(3),
+#results p:nth-of-type(7),
+#results p:nth-of-type(10){
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-style: italic;
+}
 
 /*FOOTER*/
 footer {
