@@ -421,12 +421,23 @@ button {
     margin-bottom: 2em;
 }
 
+input:focus, textarea:focus{
+    outline: 2px solid var(--accent-color);
+}
+
+input[type="text"]:focus-visible,
+input[type="email"]:focus-visible,
+input[type="tel"]:focus-visible,
+input[type="submit"]:focus-visible,
+textarea:focus-visible{
+    background-color: var(--lighter-text-color);
+}
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="submit"],
-textarea{
+textarea {
     margin-bottom: 1em;
     height: 44px;
     width: 100%;
@@ -470,7 +481,7 @@ textarea {
     width: 98%;
     display: flex;
     flex-direction: column;
-    padding: 0; 
+    padding: 0;
 }
 
 #radioMember input[type="radio"] {
@@ -513,10 +524,48 @@ textarea {
 
 #cardsShowHere {
     grid-column: 2/3;
+    padding: 0;
+    margin: 0 2em;
+}
+
+#cardsShowHere h2 {
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    text-align: center;
 }
 
 #cardsShowHere div {
+    background-color: var(--secondary-color);
+    color: var(--lighter-text-color);
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    border-radius: 0.6em;
+    box-shadow: -10px 11px 10px -6px var(--shadow-color), 10px 11px 10px -6px var(--shadow-color);
     animation: fade 4s;
+}
+
+#cardsShowHere h3 {
+    font-style: italic;
+    font-size: 24px;
+}
+
+#cardsShowHere button {
+    width: 70%;
+    color: var(--dark-color);
+    border: 1px solid var(--lighter-text-color);
+
+    background-image: linear-gradient(to right, var(--lighter-text-color) 50%, var(--dark-hover-color) 50%);
+    background-size: 200%;
+    transition: 0.4s ease-out;
+    cursor: pointer;
+}
+
+#cardsShowHere button:hover {
+
+    background-position: right;
+    color: var(--lighter-text-color);
+    border: 1px solid var(--dark-color);
 }
 
 /*animations*/
