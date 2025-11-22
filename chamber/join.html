@@ -66,7 +66,7 @@
 
                 <label for="orgTitle">Organization Title</label>
                 <input id="orgTitle" name="orgTitle" title="Organization Title" type="text"
-                    autocomplete="organization-title">
+                    autocomplete="organization-title" pattern="[a-zA-Z\\s-]{7,}">
 
                 <label for="email">Email</label>
                 <input id="email" name="email" title="Email" type="email" autocomplete="email"
@@ -74,7 +74,7 @@
 
                 <label for="phone">Mobile Phone Number</label>
                 <input id="phone" name="phone" title="Mobile Phone Number" type="tel" autocomplete="tel"
-                    placeholder="567-777-6890" required>
+                    placeholder="567-777-6890" required pattern="[0-9]{10}">
             </fieldset>
 
             <fieldset>
