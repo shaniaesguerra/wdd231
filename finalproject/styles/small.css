@@ -1,0 +1,94 @@
+:root {
+    --heading-font-family: "Inter", sans-serif;
+    --heading-font-weight: 700;
+    --heading-font-size: 3em;
+    --body-font-family: "Roboto Slab", serif;
+    --body-font-weight: 300;
+    --subheading-font-weight: 400;
+
+    /*Colors*/
+    --background-color: #0d0f12;
+    --primary-color: #9d8ff0;
+    --secondary-color: #f7d25b;
+    --accent-color: #f4f4f4;
+}
+
+* {
+    background-color: var(--background-color);
+    color: var(--accent-color);
+    font-family: var(--body-font-family);
+    font-weight: var(--body-font-weight);
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0 1em;
+}
+
+header,
+main,
+footer {
+    padding: 1em;
+}
+
+/************** HEADER *****************/
+header {
+    display: grid;
+    grid-template-columns: 35px auto auto 44px;
+    padding: 7px 0 5px 20px;
+    align-items: end;
+    column-gap: 1em;
+}
+
+header img {
+    width: 44px;
+    height: 44px;
+}
+
+header span {
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    color: var(--primary-color);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 0.2em;
+}
+
+/************** NAVIGATION *****************/
+.navigation ul {
+    list-style: none;
+}
+
+.navigation a {
+    text-decoration: none;
+}
+
+/************** MAIN *****************/
+h1,
+h2,
+h3,
+a {
+    font-family: var(--heading-font-family);
+}
+
+h1 {
+    font-weight: var(--heading-font-weight);
+    color: var(--primary-color);
+    font-size: var(--heading-font-size);
+}
+
+h2 {
+    font-weight: var(--subheading-font-weight);
+    font-size: 1.86em;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 1.17em;
+}
+
+/************** DIALOG *****************/
+
+/************** FOOTER *****************/
