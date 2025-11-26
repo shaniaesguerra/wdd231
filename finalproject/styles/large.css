@@ -1,4 +1,19 @@
 /************** LARGER VIEW *****************/
-@media only screen and (min-width: 38em){
+@media only screen and (min-width: 38em) {
+    
+    .hamburger {
+        display: none;
+    }
 
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
 }
