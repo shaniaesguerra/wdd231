@@ -41,4 +41,8 @@
     .navigation a {
         border: none;
     }
+
+    #wireframeCard {
+        display: grid;
+    }
 }

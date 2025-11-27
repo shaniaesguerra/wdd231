@@ -54,8 +54,6 @@ h2 {
     font-size: 1.86em;
     margin-bottom: 0;
     text-transform: capitalize;
-
-
 }
 
 h3 {
@@ -170,7 +168,7 @@ main {
 }
 
 main h1 {
-    grid-row: 1/4;
+    grid-row: 1/3;
     display: inline;
     white-space: normal;
     border-radius: 0.6em;
@@ -185,12 +183,12 @@ main div {
 }
 
 #colorCard {
-    grid-column: 2/3;
+    grid-column: 1/2;
     align-items: left;
 }
 
 #typeCard {
-    grid-column: 3/4;
+    grid-column: 2/4;
 }
 
 #typeCard h4:nth-child(3) {
@@ -209,12 +207,14 @@ main div {
     margin-bottom: 0;
 }
 
-#scenariosCard {
-    grid-column: 2/4;
+#typeCard h4:nth-child(3):hover,
+#typeCard h4:nth-child(5):hover {
+    transform: translateX(20px);
+    transition: 0.3s ease;
 }
 
-#wireframeCard {
-    grid-column: 1/5;
+#scenariosCard {
+    grid-column: 2/4;
 }
 
 #scenariosCard h2,
@@ -235,7 +235,8 @@ main div {
     box-shadow: 0 0 10em 1em var(--secondary-color);
     border-radius: 0.6em;
     padding: 2em;
-    opacity: 0; /*hide divs*/
+    opacity: 0;
+    /*hide divs*/
     animation: fadeInUp 0.5s ease-out forwards;
 }
 
@@ -267,7 +268,7 @@ main div {
     animation-delay: 1.2s;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.02);
     transition: 0.5s ease-in;
 }
@@ -275,9 +276,10 @@ main div {
 #backColor,
 #primColor,
 #secondColor,
-#accentColor{
+#accentColor {
     margin-left: 0.3em;
 }
+
 #backColor:hover,
 #primColor:hover,
 #secondColor:hover,
@@ -317,6 +319,40 @@ main div {
     background-color: var(--accent-color);
     color: var(--background-color);
     box-shadow: 0 0 1em 0 var(--accent-color);
+}
+
+#wireframeCard {
+    grid-column: 1/5;
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+}
+
+#wireframeCard h2,
+#wireframeCard h3 {
+    grid-column: 1/3;
+}
+
+#wireframeCard figure {
+    margin: 0 0.6em;
+}
+
+#wireframeCard figcaption {
+    margin-bottom: 1em;
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-size: 1.17em;
+    margin-bottom: 1em;
+}
+
+#wireframeCard img {
+    width: 390px;
+    height: auto;
+}
+
+#wireframeCard img:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in;
 }
 
 /************** FOOTER *****************/
