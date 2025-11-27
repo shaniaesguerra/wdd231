@@ -146,16 +146,10 @@ header span {
 
 /************** MAIN *****************/
 main{
-    display: grid;
-    grid-template-columns: 1fr auto auto;
-    column-gap: 1.3em;
-    row-gap: 0.6em;
+   display: block;
 }
 
 main h1 {
-    padding: 0 0.6em 0.6em 0.6em;
-    margin: 0.4em 0 0 0;
-    border-right: 1px solid var(--primary-color);
     grid-row: 1/5;
     display: inline;
     white-space: normal;
