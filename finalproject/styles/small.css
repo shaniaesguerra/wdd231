@@ -37,6 +37,7 @@ h2,
 h3,
 a {
     font-family: var(--heading-font-family);
+    background-color: transparent;
 }
 
 h1 {
@@ -45,12 +46,15 @@ h1 {
     font-size: var(--heading-font-size);
 }
 
+
 h2 {
     font-weight: var(--subheading-font-weight);
     font-style: italic;
     font-size: 1.86em;
     margin-bottom: 0;
     text-transform: capitalize;
+
+
 }
 
 h3 {
@@ -58,6 +62,12 @@ h3 {
     font-size: 1.17em;
     margin-top: 0.5em;
     margin-bottom: 1.5em;
+}
+
+p,
+span,
+figure {
+    background-color: transparent;
 }
 
 /************** HEADER *****************/
@@ -101,7 +111,7 @@ header span {
     padding: 0;
 }
 
-.hamburger:hover{
+.hamburger:hover {
     background-color: var(--secondary-color);
     border-radius: 0.6em;
 }
@@ -119,7 +129,7 @@ header span {
 .navigation ul {
     list-style: none;
     text-align: left;
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
@@ -131,12 +141,12 @@ header span {
     font-weight: 500;
 }
 
-.navigation li.current a{
+.navigation li.current a {
     border-bottom: 1px solid var(--primary-color);
     color: var(--primary-color);
 }
 
-.navigation a:hover{
+.navigation a:hover {
     transition: 0.5s ease-in;
     background-color: var(--secondary-color);
     border-bottom: 1px solid var(--primary-color);
@@ -145,46 +155,53 @@ header span {
 }
 
 /************** MAIN *****************/
-main{
-   display: block;
+main {
+    display: block;
+    padding-top: 1em;
+    column-gap: 1.3em;
+    row-gap: 1.3em;
 }
 
 main h1 {
     grid-row: 1/5;
     display: inline;
     white-space: normal;
+    border-radius: 0.6em;
 }
 
-main div{
+main div {
     padding: 0.6em;
 }
 
-#colorCard{
+#colorCard {
     grid-column: 2/3;
 }
 
-#typeCard{
+#typeCard {
     grid-column: 3/4;
 }
 
-#typeCard p span:nth-child(1){
+#typeCard p span:nth-child(1) {
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
     font-size: var(--heading-font-size);
 }
 
-#typeCard p span:nth-child(5){
+#typeCard p span:nth-child(5) {
     font-family: var(--body-font-family);
     font-weight: var(--heading-font-weight);
     font-size: var(--heading-font-size);
 }
 
-#scenariosCard, #wireframeCard{
+#scenariosCard,
+#wireframeCard {
     grid-column: 2/4;
 }
 
-#scenariosCard h2, #scenariosCard h3, #wireframeCard h2,
-#wireframeCard h3{
+#scenariosCard h2,
+#scenariosCard h3,
+#wireframeCard h2,
+#wireframeCard h3 {
     text-align: center;
 }
 
@@ -195,6 +212,57 @@ main div{
     color: var(--primary-color);
 }
 
+.card {
+    box-shadow: 0 0 10em 1em var(--secondary-color);
+    border-radius: 0.6em;
+    padding: 2em;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    transition: 0.3s ease-in;
+}
+
+#backColor:hover,
+#primColor:hover,
+#secondColor:hover,
+#accentColor:hover {
+    transform: rotate(-4deg);
+    transition: 0.3s ease;
+}
+
+.colorCircles {
+    margin: 2rem;
+    width: 90%;
+    height: 50px;
+    border-radius: 0.6em;
+    text-align: center;
+    justify-content: center;
+    font-family: var(--heading-font-family);
+    font-weight: var(--subheading-font-weight);
+}
+
+#backColor {
+    background-color: var(--background-color);
+    box-shadow: 0 0 1em 0 var(--secondary-color);
+}
+
+#primColor {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    box-shadow: 0 0 1em 0 var(--primary-color)
+}
+
+#secondColor {
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 1em 0 var(--primary-color);
+}
+
+#accentColor {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    box-shadow: 0 0 1em 0 var(--accent-color);
+}
 
 /************** DIALOG *****************/
 
