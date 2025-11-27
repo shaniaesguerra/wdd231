@@ -186,22 +186,27 @@ main div {
 
 #colorCard {
     grid-column: 2/3;
+    align-items: left;
 }
 
 #typeCard {
     grid-column: 3/4;
 }
 
-#typeCard p span:nth-child(1) {
+#typeCard h4:nth-child(3) {
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
     font-size: var(--heading-font-size);
+    margin-top: 1em;
+    margin-bottom: 0;
 }
 
-#typeCard p span:nth-child(5) {
+#typeCard h4:nth-child(5) {
     font-family: var(--body-font-family);
     font-weight: var(--heading-font-weight);
     font-size: var(--heading-font-size);
+    margin-top: 0.6em;
+    margin-bottom: 0;
 }
 
 #scenariosCard {
@@ -267,6 +272,12 @@ main div {
     transition: 0.5s ease-in;
 }
 
+#backColor,
+#primColor,
+#secondColor,
+#accentColor{
+    margin-left: 0.3em;
+}
 #backColor:hover,
 #primColor:hover,
 #secondColor:hover,
