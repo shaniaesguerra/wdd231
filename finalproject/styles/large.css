@@ -1,5 +1,10 @@
 /************** LARGER VIEW *****************/
 @media only screen and (min-width: 38em) {
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
     header {
         display: grid;
         grid-template-columns: 44px auto auto;
@@ -19,5 +24,11 @@
 
     .navigation a {
         border: none;
+    }
+}
+
+@media only screen and (max-width: 881px) {
+    header {
+        display: block;
     }
 }

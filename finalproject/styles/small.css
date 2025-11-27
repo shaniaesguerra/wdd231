@@ -3,13 +3,13 @@
     --heading-font-weight: 700;
     --heading-font-size: 3em;
     --body-font-family: "Roboto Slab", serif;
-    --body-font-weight: 300;
+    --body-font-weight: 200;
     --subheading-font-weight: 400;
 
     /*Colors*/
     --background-color: #0d0f12;
-    --primary-color: #9d8ff0;
-    --secondary-color: #f7d25b;
+    --primary-color: #a99aff;
+    --secondary-color: #1e232bc7;
     --accent-color: #f4f4f4;
 }
 
@@ -30,6 +30,34 @@ header,
 main,
 footer {
     padding: 1em;
+}
+
+h1,
+h2,
+h3,
+a {
+    font-family: var(--heading-font-family);
+}
+
+h1 {
+    font-weight: var(--heading-font-weight);
+    color: var(--primary-color);
+    font-size: var(--heading-font-size);
+}
+
+h2 {
+    font-weight: var(--subheading-font-weight);
+    font-style: italic;
+    font-size: 1.86em;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 1.17em;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
 }
 
 /************** HEADER *****************/
@@ -69,12 +97,19 @@ header span {
 
 .hamburger.show::before {
     content: "\00D7";
-    font-size: 2rem;
+    font-size: 3em;
+    padding: 0;
+}
+
+.hamburger:hover{
+    background-color: var(--secondary-color);
+    border-radius: 0.6em;
 }
 
 /*NAVIGATION BAR*/
 .navigation {
     display: none;
+    margin-left: auto;
 }
 
 .navigation.show {
@@ -96,33 +131,74 @@ header span {
     font-weight: 500;
 }
 
-.navigation li.current a,
-.navigation a:hover {
+.navigation li.current a{
     border-bottom: 1px solid var(--primary-color);
     color: var(--primary-color);
 }
 
-/************** MAIN *****************/
-h1,h2,h3,a {
-    font-family: var(--heading-font-family);
+.navigation a:hover{
+    transition: 0.5s ease-in;
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid var(--primary-color);
+    border-top-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
 }
 
-h1 {
+/************** MAIN *****************/
+main{
+    display: grid;
+    grid-template-columns: 2fr auto auto;
+    column-gap: 1.3em;
+    row-gap: 0.6em;
+}
+
+main h1 {
+    padding: 0 0.6em 0.6em 0.6em;
+    margin: 0.4em 0 0 0;
+    border-right: 1px solid var(--primary-color);
+    grid-row: 1/5;
+}
+
+main div{
+    padding: 0.6em;
+}
+
+#colorCard{
+    grid-column: 2/3;
+}
+
+#typeCard{
+    grid-column: 3/4;
+}
+
+#typeCard p span:nth-child(1){
+    font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
-    color: var(--primary-color);
     font-size: var(--heading-font-size);
 }
 
-h2 {
-    font-weight: var(--subheading-font-weight);
-    font-size: 1.86em;
-    margin-bottom: 0;
+#typeCard p span:nth-child(5){
+    font-family: var(--body-font-family);
+    font-weight: var(--heading-font-weight);
+    font-size: var(--heading-font-size);
 }
 
-h3 {
-    font-style: italic;
-    font-size: 1.17em;
+#scenariosCard, #wireframeCard{
+    grid-column: 2/4;
 }
+
+#scenariosCard h2, #scenariosCard h3, #wireframeCard h2,
+#wireframeCard h3{
+    text-align: center;
+}
+
+.website-name {
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-style: italic;
+    color: var(--primary-color);
+}
+
 
 /************** DIALOG *****************/
 
