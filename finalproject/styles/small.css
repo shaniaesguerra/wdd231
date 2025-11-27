@@ -103,10 +103,7 @@ header span {
 }
 
 /************** MAIN *****************/
-h1,
-h2,
-h3,
-a {
+h1,h2,h3,a {
     font-family: var(--heading-font-family);
 }
 
