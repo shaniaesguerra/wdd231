@@ -147,7 +147,7 @@ header span {
 /************** MAIN *****************/
 main{
     display: grid;
-    grid-template-columns: 2fr auto auto;
+    grid-template-columns: 1fr auto auto;
     column-gap: 1.3em;
     row-gap: 0.6em;
 }
@@ -157,6 +157,8 @@ main h1 {
     margin: 0.4em 0 0 0;
     border-right: 1px solid var(--primary-color);
     grid-row: 1/5;
+    display: inline;
+    white-space: normal;
 }
 
 main div{

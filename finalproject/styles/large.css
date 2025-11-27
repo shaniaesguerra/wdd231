@@ -5,6 +5,10 @@
         margin: 0 auto;
     }
 
+    main h1{
+        white-space: nowrap;
+    }
+
     header {
         display: grid;
         grid-template-columns: 44px auto auto;
