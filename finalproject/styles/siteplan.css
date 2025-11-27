@@ -230,8 +230,7 @@ main div {
     box-shadow: 0 0 10em 1em var(--secondary-color);
     border-radius: 0.6em;
     padding: 2em;
-    opacity: 0;
-    /*hide divs*/
+    opacity: 0; /*hide divs*/
     animation: fadeInUp 0.5s ease-out forwards;
 }
 
@@ -263,9 +262,9 @@ main div {
     animation-delay: 1.2s;
 }
 
-.card:hover {
-    transform: scale(1.04);
-    transition: 0.3s ease-in;
+.card:hover{
+    transform: scale(1.02);
+    transition: 0.5s ease-in;
 }
 
 #backColor:hover,
@@ -377,7 +376,6 @@ footer div {
 
     100% {
         opacity: 1;
-        transform: translateY(0);
     }
 }
 
@@ -388,7 +386,6 @@ footer div {
     }
 
     100% {
-        transform: translateX(0);
         opacity: 1;
     }
 }
