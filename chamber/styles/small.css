@@ -687,6 +687,10 @@ textarea {
 }
 
 /*Discover Page*/
+#discover-page h1 span{
+    font-size: 0.7em;
+    font-style: italic;
+}
 .discover-cards {
     border-top: 8px solid var(--accent-color);
     box-shadow: -10px 11px 10px -6px var(--shadow-color), 10px 11px 10px -6px var(--shadow-color);
@@ -706,6 +710,11 @@ textarea {
 
 .discover-cards h2 {
     grid-area: name;
+    margin-bottom: 0.3em ;
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-style: italic;
+    color: var(--dark-color);
 }
 
 .discover-cards figure {
@@ -719,7 +728,8 @@ textarea {
 }
 
 .discover-cards img:hover{
-    transform: scale(1.05);
+    box-shadow: -10px 11px 10px -6px var(--shadow-color), 10px 11px 10px -6px var(--shadow-color);
+    transform: translateY(-10px);
     transition: 0.3s ease-in;
 }
 
@@ -735,6 +745,7 @@ textarea {
 
 .discover-cards button {
     grid-area: learnbtn;
+    margin-bottom: 0.3em;
 }
 
 /*FOOTER*/
