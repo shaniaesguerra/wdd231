@@ -34,16 +34,17 @@ const displayDiscoverCards= (interestPlaces) => {
         imgContainer.appendChild(imgDescription);
         //--------------------------------------------------
         //Build Place Name (h2) content
-        title.textContent = place.Name;
+        title.textContent = place.name;
         //--------------------------------------------------
         //Build the address (span tag) with content:
-        address.textContent = `${place.address.street} ${place.address.city}, ${place.address.country} ${place.address.zip}`;
+        address.textContent = `Address: ${place.address.street} ${place.address.city}, ${place.address.country} ${place.address.zip}`;
         //--------------------------------------------------
         //Build the description (p) tag with content: 
         description.textContent = place.description;
         //--------------------------------------------------
         //Build the Learn More Button:
         learnMoreBtn.textContent = "Learn More";
+        learnMoreBtn.classList.add('learn-more-btn'); 
 
         //Append all content to card(div):
         card.appendChild(title);
@@ -51,6 +52,7 @@ const displayDiscoverCards= (interestPlaces) => {
         card.appendChild(address);
         card.appendChild(description);
         card.appendChild(learnMoreBtn);
+        card.classList.add('discover-cards');
 
         //Append the card(section) to businessCard(#div):
         discoverCards.appendChild(card);

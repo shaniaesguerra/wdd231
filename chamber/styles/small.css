@@ -149,7 +149,12 @@ button {
     text-align: center;
 }
 
-.menu button {
+.learn-more-btn {
+    width: 100%;
+}
+
+.menu button,
+.learn-more-btn {
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
 
@@ -159,7 +164,8 @@ button {
     cursor: pointer;
 }
 
-.menu button:hover {
+.menu button:hover,
+.learn-more-btn:hover {
     background-position: right;
     color: var(--lighter-text-color);
 }
@@ -668,16 +674,67 @@ textarea {
 #results p:nth-of-type(6),
 #results p:nth-of-type(7),
 #results p:nth-of-type(8),
-#results p:nth-of-type(9){
+#results p:nth-of-type(9) {
     text-align: center;
 }
 
 #results p:nth-of-type(3),
 #results p:nth-of-type(7),
-#results p:nth-of-type(10){
+#results p:nth-of-type(10) {
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
     font-style: italic;
+}
+
+/*Discover Page*/
+.discover-cards {
+    border-top: 8px solid var(--accent-color);
+    box-shadow: -10px 11px 10px -6px var(--shadow-color), 10px 11px 10px -6px var(--shadow-color);
+    border-radius: 0.6em;
+    padding: 1em;
+    margin: 1em;
+    align-content: center;
+
+    display: grid;
+    grid-template-areas:
+        "name"
+        "photo"
+        "description"
+        "address"
+        "learnbtn";
+}
+
+.discover-cards h2 {
+    grid-area: name;
+}
+
+.discover-cards figure {
+    grid-area: photo;
+    justify-content: center;
+    align-self: center;
+}
+
+.discover-cards img{
+    border-radius: 0.6em;
+}
+
+.discover-cards img:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in;
+}
+
+.discover-cards p {
+    grid-area: description;
+    margin-bottom: 0;
+}
+
+.discover-cards span {
+    grid-area: address;
+    padding: 1em;
+}
+
+.discover-cards button {
+    grid-area: learnbtn;
 }
 
 /*FOOTER*/
