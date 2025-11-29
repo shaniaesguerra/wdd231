@@ -1,4 +1,8 @@
-const places =[
+/* This file contains the data of the places of interest to populate cards information
+ in the DOM
+*/
+
+const places = [
     {   
         name: "Telford Lake",
         address:{
