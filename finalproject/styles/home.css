@@ -1,0 +1,99 @@
+/************** HOME PAGE*****************/
+#intro-section,
+#project-card-spotlight,
+.overlay,
+#contact-section,
+#img-container {
+    grid-column: 1/4;
+}
+
+/*******************************/
+#intro-section {
+    display: grid;
+    grid-template-areas:
+        "title title"
+        "photo info"
+        "photo btn";
+}
+
+#intro-section h2 {
+    grid-area: title;
+    text-align: center;
+    margin: 1em 0
+}
+
+#intro-section h2 span {
+    font-family: var(--heading-font-weight);
+    font-weight: var(--heading-font-weight);
+    color: var(--primary-color);
+    text-transform: uppercase;
+    text-shadow: 0 0 2em var(--primary-color);
+}
+
+#intro-section p {
+    grid-area: info;
+    align-self: center;
+    padding: 0.6em;
+}
+
+#intro-section img {
+    grid-area: photo;
+}
+
+#intro-section a {
+    grid-area: btn;
+    justify-self: center;
+    width: 50%;
+}
+
+/**************OVERLAY SECTION*****************/
+.overlay {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+#img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#contact-section {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-opaque-color);
+    box-shadow: none;
+    text-shadow: 0 0 3em var(--background-color);
+    padding: 5em;
+}
+
+#contact-section p {
+    margin: 1em 0;
+    padding: 1em 0;
+}
+
+#contact-section h2 {
+    margin-top: 0;
+}
+
+#con#contact-section a {
+    margin-top: 20px;
+}
+
+/*******************************/

@@ -8,6 +8,7 @@
 
     /*Colors*/
     --background-color: #0d0f12;
+    --background-opaque-color: #0d0f12da;
     --primary-color: #a99aff;
     --secondary-color: #2f3744c7;
     --accent-color: #f4f4f4;
@@ -167,13 +168,16 @@ main {
     row-gap: 1.3em;
 }
 
+main img {
+    border-radius: 0.6em;
+}
+
 main h1 {
-    grid-row: 1/3;
-    display: inline;
-    white-space: normal;
+    grid-column: 1/4;
     border-radius: 0.6em;
     text-shadow: 0 0 2em var(--primary-color);
-    opacity: 0; /*hide*/
+    opacity: 0;
+    /*hide*/
     animation: slideInLeft 0.5s ease-out forwards;
 }
 
@@ -182,53 +186,28 @@ main div {
     margin: 1em 0;
 }
 
-#colorCard {
-    grid-column: 1/2;
-    align-items: left;
-}
-
-#typeCard {
-    grid-column: 2/4;
-}
-
-#typeCard h4:nth-child(3) {
+main a {
+    text-decoration: none;
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
-    font-size: var(--heading-font-size);
-    margin-top: 1em;
-    margin-bottom: 0;
-}
-
-#typeCard h4:nth-child(5) {
-    font-family: var(--body-font-family);
-    font-weight: var(--heading-font-weight);
-    font-size: var(--heading-font-size);
-    margin-top: 0.6em;
-    margin-bottom: 0;
-}
-
-#typeCard h4:nth-child(3):hover,
-#typeCard h4:nth-child(5):hover {
-    transform: translateX(20px);
-    transition: 0.3s ease;
-}
-
-#scenariosCard {
-    grid-column: 2/4;
-}
-
-#scenariosCard h2,
-#scenariosCard h3,
-#wireframeCard h2,
-#wireframeCard h3 {
+    text-transform: uppercase;
     text-align: center;
+    font-size: 1em;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 1em 0 var(--primary-color);
+    color: var(--background-color);
+    height: 44px;
+    padding: 10px 20px;
+    border-radius: 0.6em;
+    cursor: pointer;
 }
 
-.website-name {
-    font-family: var(--heading-font-family);
-    font-weight: var(--heading-font-weight);
-    font-style: italic;
-    color: var(--primary-color);
+main a:hover {
+    transition: 0.3s ease-in;
+    transform: translateY(-5px);
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    box-shadow: 0 0 1em 0 var(--accent-color);
 }
 
 .card {
@@ -271,88 +250,6 @@ main div {
 .card:hover {
     transform: scale(1.02);
     transition: 0.5s ease-in;
-}
-
-#backColor,
-#primColor,
-#secondColor,
-#accentColor {
-    margin-left: 0.3em;
-}
-
-#backColor:hover,
-#primColor:hover,
-#secondColor:hover,
-#accentColor:hover {
-    transform: rotate(-4deg);
-    transition: 0.3s ease;
-}
-
-.colorCircles {
-    margin: 2rem;
-    width: 90%;
-    height: 50px;
-    border-radius: 0.6em;
-    text-align: center;
-    justify-content: center;
-    font-family: var(--heading-font-family);
-    font-weight: var(--subheading-font-weight);
-}
-
-#backColor {
-    background-color: var(--background-color);
-    box-shadow: 0 0 1em 0 var(--secondary-color);
-}
-
-#primColor {
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    box-shadow: 0 0 1em 0 var(--primary-color)
-}
-
-#secondColor {
-    background-color: var(--secondary-color);
-    box-shadow: 0 0 1em 0 var(--primary-color);
-}
-
-#accentColor {
-    background-color: var(--accent-color);
-    color: var(--background-color);
-    box-shadow: 0 0 1em 0 var(--accent-color);
-}
-
-#wireframeCard {
-    grid-column: 1/5;
-    display: block;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1em;
-}
-
-#wireframeCard h2,
-#wireframeCard h3 {
-    grid-column: 1/3;
-}
-
-#wireframeCard figure {
-    margin: 0 0.6em;
-}
-
-#wireframeCard figcaption {
-    margin-bottom: 1em;
-    font-family: var(--heading-font-family);
-    font-weight: var(--heading-font-weight);
-    font-size: 1.17em;
-    margin-bottom: 1em;
-}
-
-#wireframeCard img {
-    width: 390px;
-    height: auto;
-}
-
-#wireframeCard img:hover {
-    transform: scale(1.02);
-    transition: 0.3s ease-in;
 }
 
 /************** FOOTER *****************/

@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Home</title>
-    <meta name="description" content="Software Engineer. Find out what kind of projects I am working on and what services I can offer.">
+    <meta name="description"
+        content="Software Engineer. Find out what kind of projects I am working on and what services I can offer.">
     <meta name="author" content="Shania Esguerra">
 
     <!--Favicon-->
@@ -14,12 +15,15 @@
     <!--Social Media Tags-->
     <!--Facebook-->
     <meta property="og:title" content="Home">
-    <meta property="og:description" content="Discover Shania Esguerra's page, a Software Engineer about her services and projects she has made.">
-    <meta property="og:image" content="https://shaniaesguerra.github.io/wdd231/finalproject/images/social-media-photo.webp">
+    <meta property="og:description"
+        content="Discover Shania Esguerra's page, a Software Engineer about her services and projects she has made.">
+    <meta property="og:image"
+        content="https://shaniaesguerra.github.io/wdd231/finalproject/images/social-media-photo.webp">
     <meta property="og:url" content="https://shaniaesguerra.github.io/wdd231/finalproject/index.html">
 
     <!--Stylesheets-->
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/large.css">
 
     <!--Fonts-->
@@ -50,10 +54,31 @@
         </nav>
         <button id="ham-btn" class="hamburger"></button>
     </header>
-    <main>
+    <main id="home">
         <h1>Home</h1>
-        <div class="card">
-            <h2>Hi, I'm Shania Esguerra, a Software Engineer.</h2>
+        <div class="card" id="intro-section">
+            <h2>Hi, I am <span>Shania Esguerra 👩🏻‍💻</span></h2>
+            <img src="images/profile.webp" alt="Profile Photo of Shania Esguerra" width="320" height="320"
+                loading="lazy">
+            <p>I am a Software Engineer. I am a recent Bachelor in Software Development graduate who is passionate about
+                clean and organized code, and Fullstack development. I am also interested in making video games.
+                <br><br>Learn more about my credentials by clicking the "LEARN MORE" button below!
+            </p>
+            <a href="about.html">Learn More</a>
+        </div>
+        <div class="card" id="project-card-spotlight">
+            <h2>Featured Projects</h2>
+            <!--Add button for projects page here-->
+        </div>
+        <div class="card overlay">
+            <div class="card" id="img-container">
+                <img src="images/typing-bg.webp" alt="Background photo of a code snippet" width="2000" height="1333">
+            </div>
+            <div class="card" id="contact-section">
+                <h2>Want to work together on a project?</h2>
+                <p>Click below to get more information on how to contact me!</p>
+                <a href="contact.html">Contact Information</a>
+            </div>
         </div>
     </main>
     <footer>
