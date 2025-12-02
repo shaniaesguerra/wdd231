@@ -41,4 +41,32 @@
     .navigation a {
         border: none;
     }
+
+    #intro-section,
+    #project-card-spotlight,
+    .overlay,
+    #contact-section,
+    #img-container {
+        display: grid;
+    }
+
+    .overlay {
+        position: relative;
+
+    }
+
+    #img-container {
+        position: relative;
+    }
+
+    #contact-section {
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        justify-content: center;
+        align-items: center;
+    }
 }
