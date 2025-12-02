@@ -1,0 +1,48 @@
+/************** LARGER VIEW *****************/
+@media only screen and (min-width: 724px) {
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+    }
+
+    main h1 {
+        white-space: nowrap;
+        border-right: 1px solid var(--primary-color);
+        padding: 0.5em 0.6em 0.6em 0.6em;
+        margin: 0.4em 0 0 0;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 44px auto auto;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1.5fr auto 1.5fr;
+        column-gap: 0.6em;
+        padding-left: 0;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    #wireframeCard {
+        display: grid;
+    }
+}
