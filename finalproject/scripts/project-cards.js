@@ -10,7 +10,7 @@ async function getProjectData() {
 }
 
 // get the container for the project cards
-const projectCards = document.querySelector('#couse-contatiner');
+const projectCards = document.querySelector('#course-projects');
 
 const displayProjectCards= (projects) => {
     projects.forEach(project => {
