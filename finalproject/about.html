@@ -34,6 +34,7 @@
     <!--Scripts-->
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather-api.js" defer></script>
 
 </head>
 
@@ -57,6 +58,19 @@
         <div class="card" id="town-section">
            <span>I live in Leduc, Alberta. Here's some live weather information for you to view!</span>
            <!-- Add Weather API -->
+            <section id="weather-api">
+                <h2>Current Weather</h2>
+                <figure><img id="weather-icon" src="#" alt="" loading="lazy"></figure>
+                <p>
+                    <span id="current-temp"></span><br>
+                    <span id="weather-desc"></span><br>
+                    High: <span id="high-temp"></span><br>
+                    Low: <span id="low-temp"></span><br>
+                    Humidity: <span id="humidity"></span><br>
+                    Sunrise: <span id="sunrise-time"></span><br>
+                    Sunset: <span id="sunset-time"></span><br>
+                </p>
+            </section>
         </div>
         <div class="card" id="skills-section">
             <h2>Skills</h2>
