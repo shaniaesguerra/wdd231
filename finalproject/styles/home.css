@@ -24,7 +24,7 @@
 }
 
 #intro-section h2 span {
-    font-family: var(--heading-font-weight);
+    font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
     color: var(--primary-color);
     font-style: normal;
