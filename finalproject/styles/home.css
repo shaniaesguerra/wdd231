@@ -13,8 +13,16 @@
     display: block;
     grid-template-areas:
         "title title"
+        "welcome welcome"
         "photo info"
         "photo btn";
+}
+
+#visitor-msg {
+    grid-area: welcome;
+    font-family: var(--heading-font-family);
+    font-size: 2em;
+    text-align: center;
 }
 
 #intro-section h2 {
@@ -51,7 +59,7 @@
 
 /**************OVERLAY SECTION*****************/
 .overlay {
-    position:static;
+    position: static;
     padding: 0;
     margin: 0;
     box-shadow: none;
@@ -137,10 +145,9 @@
 #more-projects-section {
     padding: 1em;
     align-content: center;
-    justify-self:center;
+    justify-self: center;
 }
 
 #more-projects-section p {
     margin: 2em 0;
 }
-
