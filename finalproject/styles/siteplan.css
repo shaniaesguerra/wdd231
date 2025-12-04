@@ -307,7 +307,7 @@ main div {
 #primColor {
     background-color: var(--primary-color);
     color: var(--background-color);
-    box-shadow: 0 0 1em 0 var(--primary-color)
+    box-shadow: 0 0 1em 0 var(--primary-color);
 }
 
 #secondColor {

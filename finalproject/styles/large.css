@@ -46,7 +46,10 @@
     #project-card-spotlight,
     .overlay,
     #contact-section,
-    #img-container {
+    #img-container,
+    #skills-section,
+    #town-section,
+    #town-section section {
         display: grid;
     }
 
@@ -68,5 +71,9 @@
         transform: translate(-50%, -50%);
         justify-content: center;
         align-items: center;
+    }
+
+    #about h1 {
+        border-right: 1px solid var(--primary-color);
     }
 }
