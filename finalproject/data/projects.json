@@ -5,49 +5,56 @@
             "type":"coursework",
             "description":"My first project in web designing. The goal was to make a website for a White Water Rafting Business and populating the website with relevant content. It helped me learn the fundamentals of web design and layout. I was able to learn the fundamentals of grid and flex layouts, how to make overlays and how to implement a good form. It was a term project that was made in a span of 7-weeks.",
             "url": "https://shaniaesguerra.github.io/wdd130/wwr/",
-            "image":"images/project1.webp"
+            "image":"images/project1.webp",
+            "rating": 3
         },
         {
             "name": "Small Local Business Webpage",
             "type": "coursework",
             "description": "The project's purpose was to make a website for a small local business in our area. The goal was to implement responsive styling for mobile and desktop views. This project helped me learn more about making effective forms and making sure that it is intuitive for the user. This helped me with planning the making of the website from start to finish by making a site plan page. It outlines the Site Purpose, Typography and colors to be used, and a wireframe. I was also able to learn introductory JavaScript scripts with using event listeners which are implemented in the menu. I was also able to learn more about making understandable and relevant content on the website. This project also helped me to solidify my understanding with making the website responsive for a better user experience. This project was submitted at the end of the course and took 2 weeks to finish.",
             "url": "https://shaniaesguerra.github.io/wdd131/project/home.html",
-            "image": "images/project2.webp"
+            "image": "images/project2.webp",
+            "rating": 2
         },
         {
             "name": "Product Review Form",
             "type": "coursework",
             "description": "The project's purpose was to help us create better forms with implementing a feature with the localStorage in JavaScript. This project helped us learn how to populate the DOM using JavaScript instead of manually putting them in the HTML document. This was also our introduction in the course on how we are able to use the localStorage to count how many times a review was made by the user. This project took 3-5 days to complete.",
             "url": "https://shaniaesguerra.github.io/wdd131/form.html",
-            "image": "images/project3.webp"
+            "image": "images/project3.webp",
+            "rating": 1
         },
         {
             "name": "Filtered Temple Album Project",
             "type": "coursework",
             "description": "The purpose of this project was for us to be able to use JavaScript to create an object called temples and populate the HTML DOM with this data. This project was an introduction to functions and filtered lists in JavaScript. The navigation on this page will filter the temples according to the dates they were dedicated (Old or New) and their size (Large and Small). This project took 2-3 days to make.",
             "url": "https://shaniaesguerra.github.io/wdd131/filtered-temples.html",
-            "image": "images/project4.webp"
+            "image": "images/project4.webp",
+            "rating": 1
         },
         {
             "name": "Web Development 231 Student Webpage",
             "type": "coursework",
             "description": "The purpose of this project was to make a Home Page for my course. This serves as a landing page to get to other projects I have done in the course. Through out the course we were tasked to continuously add more features to our Home Page. The \"Web Certificate Courses\" section has elements that are populated with the use of JavaScript. This section also features a navigation bar that, when clicked, will show a list of courses and filtered courses according to their labels. The courses that show feature a dialog box that shows more information to the user. This was a course long project.",
             "url": "https://shaniaesguerra.github.io/wdd231/",
-            "image": "images/project5.webp"
+            "image": "images/project5.webp",
+            "rating": 2
         },
         {
             "name": "Chamber of Commerce Project",
             "type": "coursework",
             "description": "The goal of the project was to make a Chamber of Commerce page. We were tasked to make our own content and design in making these pages. The project also made us collaborate with other people in our group to discuss errors or concerns we had making our pages and has helped me with looking on how I would be able to enhance mine. This project also feature the implementation of Open Weather API to make a live weather information section. This also features the use of dialog pop ups to help the user view more information. This also features a more effective form section. When the form is submitted it features a personalized thank you message to the user. This project helped me solidify my understanding in making JavaScript code and how it could help me make a more enjoyable user experience. This project also helped me learn more about making a responsive layout for any size of viewing screen. for This project took 5 weeks to finish.",
             "url": "https://shaniaesguerra.github.io/wdd231/chamber/",
-            "image": "images/project6.webp"
+            "image": "images/project6.webp",
+            "rating": 3
         },
         {
             "name": "Software Engineer Website Final Project",
             "type": "coursework",
-            "description": "This project is this website you are viewing right now! It is a project that features the use of JSON files, ES Modules, adding APIs and basically everything I have learned in my course so far. The goal of the project is to make a website for a Software Engineer to showcase their services and credentials to reach their clients or audience. Just like my other projects, I was involved from the development of this website from start to finish, including the back-end programming. This project took 1 week to finish but I am looking forward in enhancing this project more.",
+            "description": "This project is this website you are viewing right now! It is a project that features the use of JSON files, ES Modules, adding APIs and basically everything I have learned in my course so far. The goal of the project is to make a website for a Software Engineer to showcase their services and credentials to reach their clients or audience. Just like my other projects, I was involved from the development of this website from start to finish, including the back-end programming. This project took 1 week to finish but I am looking forward in enhancing this project more in the future.",
             "url": "https://shaniaesguerra.github.io/wdd231/finalproject/",
-            "image": "images/project7.webp"
+            "image": "images/project7.webp",
+            "rating": 3
         }
     ]
 }

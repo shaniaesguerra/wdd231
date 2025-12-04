@@ -94,4 +94,30 @@
     margin-top: 20px;
 }
 
-/*******************************/
+/**************SPOTLIGHT PROJECTS SECTION*****************/
+.project-cards {
+    padding: 2em;
+    text-align: center;
+    background-color: var(--secondary-color);
+    border-radius: 0.6em;
+    margin: 1em 0;
+}
+
+.project-cards h2 {
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    text-transform: capitalize;
+    font-style: normal;
+    text-shadow: 0 0 2em var(--accent-color);
+    margin-bottom: 1em;
+}
+
+.project-cards img {
+    width: 300px;
+    box-shadow: 0 0 1em 0 var(--background-color);
+}
+
+.project-cards p {
+    margin: 1em;
+    padding: 1em 0.6em 2em 0.6em;
+}
