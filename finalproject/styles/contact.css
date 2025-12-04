@@ -1,0 +1,148 @@
+.contact-form {
+    grid-column: 1/3;
+    margin: 1em 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contact-form fieldset legend {
+    text-align: center;
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    padding: 1em;
+    border-radius: 0.6em;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    box-shadow: 0 0 1em var(--primary-color);
+}
+
+.contact-form label {
+    font-family: var(--heading-font-family);
+    font-weight: 350;
+    font-style: italic;
+    padding-left: 2px;
+    padding-bottom: 3px;
+}
+
+.contact-form fieldset {
+    border-radius: 0.6em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 0 1em var(--secondary-color);
+    margin-bottom: 2em;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 1em var(--accent-color);
+}
+
+input[type="text"]:focus-visible,
+input[type="email"]:focus-visible,
+input[type="tel"]:focus-visible,
+input[type="submit"]:focus-visible,
+textarea:focus-visible {
+    background-color: var(--background-color);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"],
+textarea {
+    margin-bottom: 1em;
+    height: 44px;
+    width: 100%;
+    border-radius: 0.6em;
+    display: block;
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+    padding: 0.75rem;
+    color: var(--accent-color);
+    appearance: none;
+    font-family: var(--heading-font-family);
+    font-weight: 400;
+}
+
+.contact-form input[type="text"]:required,
+.contact-form input[type="email"]:required,
+.contact-form input[type="tel"]:required,
+.contact-form textarea:required {
+    border-left: solid 8px var(--accent-color);
+}
+
+.contact-form input[type="text"]:valid,
+.contact-form input[type="email"]:valid,
+.contact-form input[type="tel"]:valid,
+.contact-form textarea:valid {
+    border-left: solid 8px var(--primary-color);
+    border-right: 1px solid var(--primary-color);
+    border-top: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    box-shadow: 0 0 1em var(--primary-color);
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    border-radius: 0.6em;
+}
+
+#radioContactMethod,
+#radioMessage {
+    grid-column: 1/3;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+#radioContactMethod input[type="radio"],
+#radioMessage input[type="radio"] {
+    margin-bottom: 1em;
+    padding-right: 2px;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+#radioContactMethod h2,
+#radioMessage h2 {
+    grid-column: 1/3;
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-style: italic;
+    font-size: 1.3em;
+    padding-left: 2px;
+    margin-top: 0;
+    margin-bottom: 0.6em;
+}
+
+.contact-form input[type="submit"] {
+    grid-column: 1/3;
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-size: 1em;
+    text-transform: uppercase;
+
+    color: var(--background-color);
+    border: 1px solid var(--accent-color);
+
+    background-image: linear-gradient(to right, var(--accent-color) 50%, var(--primary-color) 50%);
+    background-size: 200%;
+    transition: 0.4s ease-out;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-position: right;
+    color: var(--background-color);
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 1em var(--primary-color);
+}
