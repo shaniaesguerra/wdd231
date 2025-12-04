@@ -72,15 +72,15 @@
 
                 <label for="phone">Mobile Phone Number</label>
                 <input id="phone" name="phone" title="Mobile Phone Number" type="tel" autocomplete="tel"
-                    placeholder="567-777-6890" pattern="[0-9]{10}">
+                    placeholder="567-777-6890" pattern="[0-9]{10}" required>
 
                 <div id="radioContactMethod">
                     <h2>Preffered Contact Method:</h2>
-                    <label for="emailContact"><input id="emailContact" name="contactMethod" value="email" title="Email"
+                    <label for="emailContact"><input id="emailContact" name="contactMethod" value="Email" title="Email"
                             type="radio" required>
                         Email</label>
 
-                    <label for="phoneContact"><input id="phoneContact" name="contactMethod" value="phone" title="Phone"
+                    <label for="phoneContact"><input id="phoneContact" name="contactMethod" value="Phone" title="Phone"
                             type="radio" required>
                         Phone</label>
                 </div>
@@ -89,15 +89,15 @@
             <fieldset>
                 <div id="radioMessage">
                     <h2>Type of Message:</h2>
-                    <label for="generalQ"><input id="generalQ" name="message" value="general" title="General Question"
+                    <label for="generalQ"><input id="generalQ" name="messageType" value="General Question" title="General Question"
                             type="radio" required>
                         General Question</label>
 
-                    <label for="jobQ"><input id="jobQ" name="message" value="job" title="Job Offer" type="radio"
+                    <label for="jobQ"><input id="jobQ" name="messageType" value="Job Offer" title="Job Offer" type="radio"
                             required>
                         Job Offer</label>
 
-                    <label for="otherQ"><input id="otherQ" name="message" value="other"
+                    <label for="otherQ"><input id="otherQ" name="messageType" value="Other"
                             title="Other Concerns / Questions" type="radio" required>
                         Other Concerns / Questions</label>
                 </div>
