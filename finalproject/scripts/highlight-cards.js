@@ -41,7 +41,6 @@ const displayProjectCards = (projects) => {
         let title = document.createElement('h2');
         let imgContainer = document.createElement('figure');
         let photo = document.createElement('img');
-        let description = document.createElement("p");
         let url = document.createElement('a');
 
         //Build figure (fig) content -----------------------
@@ -56,9 +55,6 @@ const displayProjectCards = (projects) => {
         //--------------------------------------------------
         //Build Project Name (h2) content
         title.textContent = project.name;
-        //--------------------------------------------------      
-        //Build the description (p) tag with content: 
-        description.textContent = project.description;
         //--------------------------------------------------
         //Build the link button:
         url.href = `${project.url}`;
@@ -68,13 +64,38 @@ const displayProjectCards = (projects) => {
         //Append all content to card(div):
         card.appendChild(title);
         card.appendChild(imgContainer);
-        card.appendChild(description);
         card.appendChild(url);
         card.classList.add('project-cards');
 
         //Append the card(div) to discoverCards(main):
         projectCards.appendChild(card);
     });
+
+    //Build a div for a call to action to view the projects page:
+    let goToProjects = document.createElement('div');
+    let title = document.createElement('h2');
+    let description = document.createElement('p');
+    let projectBtn = document.createElement('a');
+
+    //--------------------------------------------------
+    //Build title (h2) content
+    title.textContent = 'Like to View More Projects?';
+    //--------------------------------------------------      
+    //Build the description (p) tag with content: 
+    description.textContent = 'Click the button below to view more of my projects';
+    //--------------------------------------------------
+    //Build the link button:
+    projectBtn.href = 'projects.html';
+    projectBtn.textContent = "More Projects";
+
+    //Append to div:
+    goToProjects.appendChild(title);
+    goToProjects.appendChild(description);
+    goToProjects.appendChild(projectBtn);
+    goToProjects.id = 'more-projects-section';
+
+    //Append to parent container:
+    projectCards.appendChild(goToProjects);
 }
 
 getProjectData();

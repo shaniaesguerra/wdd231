@@ -50,17 +50,14 @@
     #skills-section,
     #town-section,
     #town-section section,
-    #course-projects {
+    #course-projects,
+    #project-card-spotlight {
         display: grid;
     }
 
-    .overlay {
+    .overlay, #img-container {
         position: relative;
 
-    }
-
-    #img-container {
-        position: relative;
     }
 
     #contact-section {
