@@ -38,7 +38,7 @@
 
 /************** SKILLS SECTION *****************/
 #skills-section{
-    grid-column: 1/3;
+    grid-column: 1/4;
     display: block;
     grid-template-areas: 
     "skill skill"
@@ -148,7 +148,7 @@
 }
 /************** HOBBIES SECTION *****************/
 #hobbies-section{
-    grid-column: 3/4;
+    grid-column: 1/4;
 }
 
 /************** GO TO PROJECTS SECTION *****************/
