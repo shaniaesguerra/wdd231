@@ -18,7 +18,7 @@ async function currentWeatherApiFetch() {
         const response = await fetch(currentWeatherUrl);
         if (response.ok) {
             const data = await response.json();
-            console.log(data); // for testing and seeing output
+            //console.log(data); // for testing and seeing output
             displayCurrentWeatherResults(data); //uncomment the call to the function when output is good
         } else {
             throw Error(await response.text());
