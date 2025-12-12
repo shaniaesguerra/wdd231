@@ -34,7 +34,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -74,7 +74,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     }
 ]
 
@@ -160,5 +160,5 @@ function createCourseCards(coursesObj) {
     });
 
     //show result in the span element for the total number of courses listed
-    resultSpan.innerHTML = `The total number of course listed below is <strong>${numCredits}</strong>`;
+    resultSpan.innerHTML = `The total number of course credits listed below is <strong>${numCredits}</strong>`;
 }
